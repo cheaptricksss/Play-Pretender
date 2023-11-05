@@ -6,5 +6,5 @@ using UnityEngine;
 public class Sequences 
 {
     public List<dialogueObj> messages = new List<dialogueObj>();
-    public List<Branches> branches = new List<Branches>();
+    public List<Choices> branches = new List<Choices>();
 }

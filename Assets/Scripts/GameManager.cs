@@ -60,97 +60,109 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (choiceTime == true)
-        //{
 
-
-        //}
     }
 
     //ienumerator, waitAndPrint variables
-    float timeProduct = 1;
+    private int charPerSec = 5;
+    public float timeProduct = 1;
+    private GameObject newestGameObj;
+    private GameObject newestButtonObj;
 
     //wait and print
-    private IEnumerator waitAndPrint(dialogueObj dialogue)
+    public IEnumerator waitAndPrint(dialogueObj dialogue)
     {
-        float waitTime = dialogue.text.Length * Time.deltaTime;
+        //float waitTime = (dialogue.text.Length) * (Time.deltaTime*timeProduct/Mathf.Log(dialogue.text.Length)); // wait this time, then restart
+        float waitTime = Mathf.Log(dialogue.text.Length) * Time.deltaTime * timeProduct;
+        //Debug.Log(sequences[sequenceIndex].messages.Count); // shows only once
+        yield return new WaitForSeconds(waitTime);
 
-        while (true)
+        //after waiting is done
+        if (dialogueIndex != sequences[sequenceIndex].messages.Count-1)
         {
-            // maybe add a line that stops the corrotine from happening when the player changes the page (?)
-            yield return new WaitForSeconds(waitTime);
-            //after waiting is done
-            if (dialogueIndex != sequences[sequenceIndex].messages.Count - 1)
-            {
-                //actually creating the text object in the screen
-                
-                    GameObject newObj = Instantiate(chatMessageObj, content.transform);
-                    ScrollElement(newObj); // the refence goes in, the actual obj doesn't
-               
-                if(sequences[sequenceIndex].messages[dialogueIndex].isImage == true)
-                { // should the image be only image or the text aswell?
-                    GameObject newImObj = Instantiate(image, content.transform);
-                    newImObj.GetComponent<UnityEngine.UI.Image>().sprite = sequences[dialogueIndex].messages[dialogueIndex].image;
-                }
-                //GameObject newObj = Instantiate(chatMessageObj);
-                //ScrollElement(newObj);
+            //actually creating the text object in the screen
+            newestGameObj = Instantiate(chatMessageObj, content.transform);
 
+            ScrollElement(); // the refence goes in, the actual obj doesn't
+            if(sequences[sequenceIndex].messages[dialogueIndex].isImage == true)
 
-                //before the player has a choice, the loop just continues
-                dialogueIndex++;
-                waitAndPrint(sequences[sequenceIndex].messages[dialogueIndex]);
-            }
-            else if (sequenceIndex != sequences.Count - 1)// a choice needs to be made, dialogue index is at the end
-            {
-                sequenceIndex++;
-                dialogueIndex = 0;
-                choiceTime = true;
-                for (int i = 0; i < sequences[sequenceIndex].branches.Count; i ++)
-                {
-                    GameObject newObj = Instantiate(choiceBox, choiceBoxContent.transform); // create and put in parent obj
-                    // add the text
-                    newObj.GetComponent<UnityEngine.UI.Text>().text = sequences[sequenceIndex].branches[i].choiceMsgs;
-                    currentChoicesOnScreen.Add(newObj);
-                    //newObj.transform.TMP
-                }
-            }
-            else // the end of the game, no more dialogues left
-            {
+            { // should the image be only image or the text aswell?
 
+                //Debug.Log("In Image If Statetment");
+                GameObject newImObj = Instantiate(image, content.transform);
+                newImObj.GetComponent<Image>().sprite = sequences[dialogueIndex].messages[dialogueIndex].image;
+                //newImObj.GetComponent<TextMeshProUGUI>().rectTransform.sizeDelta = new Vector2(100, 100);
             }
+            //GameObject newObj = Instantiate(chatMessageObj);
+            //ScrollElement(newObj);
+
+            Debug.Log(dialogueIndex);
+            //before the player has a choice, the loop just continues
+            dialogueIndex++;
+            //if(dialogueIndex != sequences[sequenceIndex].messages.Count - 2)
+            StartCoroutine(waitAndPrint(sequences[sequenceIndex].messages[dialogueIndex]));
         }
+        else if (sequenceIndex != sequences.Count - 1)// a choice needs to be made, dialogue index is at the end
+        {
+            newestGameObj = Instantiate(chatMessageObj, content.transform);
+            ScrollElement(); // the refence goes in, the actual obj doesn't
+            choiceTime = true;
+            for (int i = 0; i < sequences[sequenceIndex].branches.Count; i ++)// choices as buttons
+            {
+                newestButtonObj = Instantiate(choiceBox, choiceBoxContent.transform); // create and put in parent obj
+                newestButtonObj.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = sequences[sequenceIndex].branches[i].choiceMsgs; //theres an error here
+                //adding the onclick event manually
+                newestButtonObj.GetComponent<Button>().onClick.AddListener(() => chooseDialogueOption(newestButtonObj.transform.GetChild(0).GetComponent<TextMeshProUGUI>())); // lambda expression
+                currentChoicesOnScreen.Add(newestButtonObj);
+            }
+            sequenceIndex++;
+            dialogueIndex = 0;
+        }
+        else // the end of the game, no more dialogues left
+        {
+
+        }
+        //}// while true's  squigly line
     }
 
-    private void ScrollElement(GameObject newObj) //  nudging all the elements down, creating the text
+    private void ScrollElement() //  nudging all the elements down, creating the text
     {
         // maybe have a separate list of object kept in the game manager about the sent texts
         if (sequences[sequenceIndex].messages[dialogueIndex].userTag == character.num1Wa1fuLVR) // choosing the names from the public enum
         {
-            newObj.GetComponent<UnityEngine.UI.Text>().text = "num1Wa1fuLVR";
+            newestGameObj.GetComponent<TextMeshProUGUI>().text = "num1Wa1fuLVR";
         }
         else if (sequences[sequenceIndex].messages[dialogueIndex].userTag == character.kris)
         {
-            newObj.GetComponent<UnityEngine.UI.Text>().text = "kris";
+            newestGameObj.GetComponent<TextMeshProUGUI>().text = "kris";
         }
         else if (sequences[sequenceIndex].messages[dialogueIndex].userTag == character.d4rknessWay)
         {
-            newObj.GetComponent<UnityEngine.UI.Text>().text = "d4rknessWay";
+            newestGameObj.GetComponent<TextMeshProUGUI>().text = "d4rknessWay";
         }
         else if (sequences[sequenceIndex].messages[dialogueIndex].userTag == character.json)
         {
-            newObj.GetComponent<UnityEngine.UI.Text>().text = ".json";
+            newestGameObj.GetComponent<TextMeshProUGUI>().text = ".json";
         }
-        newObj.GetComponent < UnityEngine.UI.Text >().text = " said " + sequences[sequenceIndex].messages[dialogueIndex].text;
+        newestGameObj.GetComponent <TextMeshProUGUI>().text += " said " + sequences[sequenceIndex].messages[dialogueIndex].text;
+    }
+
+    public void onClick()
+    {
+        //chooseDialogueOption(TMP_Text txt);
     }
 
     public void chooseDialogueOption(TMP_Text txt) //when the player makes (clicks the button) a choice
     {
+        Debug.Log("Button Has Been Clicked");
+        Debug.Log("TMPtext is: " + txt);
         choiceTime = false;
         //if the chosen dialogue has flavor text, add the flavor text inside the next Sequence texts (to the start)
         for (int i = 0; i < sequences[sequenceIndex - 1].branches.Count; i++)
         {
             if (sequences[sequenceIndex - 1].branches[i].choiceMsgs == txt.text)
             {
+                Debug.Log("Branch had more than 0 elements");
                 if (sequences[sequenceIndex - 1].branches[i].flavorDialogues.Count != 0)
                 {
                     for (int l = 0; l < sequences[sequenceIndex - 1].branches[i].flavorDialogues.Count; l++)
@@ -162,11 +174,18 @@ public class GameManager : MonoBehaviour
             }
         }
         //delete all the choice boxes at the end
-        while (currentChoicesOnScreen.Count != 0)
+        for (int i = 0; i < currentChoicesOnScreen.Count; i++)
         {
+            Debug.Log(currentChoicesOnScreen.Count);
             Destroy(currentChoicesOnScreen[0]); // delete the obj on screen
             currentChoicesOnScreen.RemoveAt(0); // delete the reference to that obj
         }
+
+        //while (currentChoicesOnScreen.Count != 0)
+        //{
+        //    Destroy(currentChoicesOnScreen[0]); // delete the obj on screen
+        //    currentChoicesOnScreen.RemoveAt(0); // delete the reference to that obj
+        //}
         currentChoicesOnScreen.TrimExcess();
         //start the couratine
         StartCoroutine(waitAndPrint(sequences[sequenceIndex].messages[dialogueIndex]));

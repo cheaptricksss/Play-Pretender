@@ -90,14 +90,15 @@ public class GameManager : MonoBehaviour
             newestGameObj = Instantiate(chatMessageObj, content.transform);
 
             ScrollElement(); // the refence goes in, the actual obj doesn't
-            if(sequences[sequenceIndex].messages[dialogueIndex].isImage == true)
 
+            //adding an immage
+            if(sequences[sequenceIndex].messages[dialogueIndex].isImage == true)
             { // should the image be only image or the text aswell?
 
                 //Debug.Log("In Image If Statetment");
                 GameObject newImObj = Instantiate(image, content.transform);
-                newImObj.GetComponent<Image>().sprite = sequences[dialogueIndex].messages[dialogueIndex].image;
-                //newImObj.GetComponent<TextMeshProUGUI>().rectTransform.sizeDelta = new Vector2(100, 100);
+                newImObj.GetComponent<Image>().sprite = sequences[sequenceIndex].messages[dialogueIndex].image;
+                newImObj.GetComponent<Image>().rectTransform.sizeDelta = new Vector2(100, 150);
             }
             //GameObject newObj = Instantiate(chatMessageObj);
             //ScrollElement(newObj);
@@ -142,6 +143,8 @@ public class GameManager : MonoBehaviour
         //}// while true's  squigly line
     }
 
+
+    public GameObject scrollBarObj;
     private void ScrollElement() //  nudging all the elements down, creating the text
     {
         // maybe have a separate list of object kept in the game manager about the sent texts
@@ -162,6 +165,17 @@ public class GameManager : MonoBehaviour
             newestGameObj.GetComponent<TextMeshProUGUI>().text = ".json";
         }
         newestGameObj.GetComponent <TextMeshProUGUI>().text += " said " + sequences[sequenceIndex].messages[dialogueIndex].text;
+
+        // change the  heigth and width of  the text mesh pro obj according to the amount of lines there is
+        // currently thinks that theres 1 line which equals to  0
+        Debug.Log(newestGameObj.GetComponent<TextMeshProUGUI>().textInfo.lineCount);
+        //newestGameObj.GetComponent<TextMeshProUGUI>().rectTransform.sizeDelta =
+        //    new Vector2(186f, (57.262f* newestGameObj.GetComponent<TextMeshProUGUI>().textInfo.lineCount));
+        int maxChar = 33;
+        newestGameObj.GetComponent<TextMeshProUGUI>().rectTransform.sizeDelta =
+            new Vector2(186f, (30 * ((newestGameObj.GetComponent<TextMeshProUGUI>().text.Length/maxChar) + 1)));
+        scrollBarObj.GetComponent<Scrollbar>().value = 0;
+        //newestGameObj.GetComponent<TextMeshProUGUI>().textInfo.lineCount
     }
 
     //public void chooseDialogueOption(TMP_Text txt) //when the player makes (clicks the button) a choice

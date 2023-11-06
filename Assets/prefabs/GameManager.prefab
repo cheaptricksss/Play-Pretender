@@ -49,6 +49,7 @@ MonoBehaviour:
   choiceBoxContent: {fileID: 0}
   content: {fileID: 0}
   image: {fileID: 891498469651578258, guid: 745e867d8f9014c7b98bc32aeba3039b, type: 3}
+  currentChoicesOnScreen: []
   sequences:
   - messages:
     - userTag: 0
@@ -99,6 +100,113 @@ MonoBehaviour:
       flavorDialogues: []
     - choiceMsgs: 'Im surviving '
       flavorDialogues: []
-  - messages: []
+  - messages:
+    - userTag: 0
+      text: Yeah? Any updates on Jeff?
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 2
+      text: "\u2026"
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 0
+      text: What?
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 2
+      text: My brethren in blood...
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 1
+      text: 'you dont have to get serious if you dont want to right now, jace '
+      isImage: 0
+      image: {fileID: 0}
+    branches:
+    - choiceMsgs: "Hes still\u2026 in the hospital "
+      flavorDialogues:
+      - userTag: 2
+        text: I envy his proximity to the eternal night.
+        isImage: 0
+        image: {fileID: 0}
+    - choiceMsgs: 'We had lunch the other day actually '
+      flavorDialogues:
+      - userTag: 0
+        text: "Wait. He\u2019s not in a coma anymore?"
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 2
+        text: Perhaps he is undead like myself. A coma will not stop the most tortured
+          of souls from singing songs of the night.
+        isImage: 0
+        image: {fileID: 0}
+  - messages:
+    - userTag: 0
+      text: "Erm. Anyways. I hope you\u2019re still not beating yourself over what
+        happened."
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 2
+      text: You are not to blame. No one will understand the complexities of your
+        fragmented soul. Stand tall and keep walking upon your treacherous path of
+        darkness.
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 1
+      text: yeah, dont let it get you down, man
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 1
+      text: oh, btw
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 1
+      text: i drew you a little somethin'
+      isImage: 1
+      image: {fileID: 0}
+    - userTag: 0
+      text: "Sugoi\u2026"
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 2
+      text: Pathetic.
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 2
+      text: 'Still, if Jace aligns with the shameful ways of your so-called "furry"
+        community, Kris, I will refrain from any serious judgment. '
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 2
+      text: 'I have prepared a blood sacrifice in your name to celebrate another
+        year in your feeble human life. May the spirits of the night protect your
+        withering heart. '
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 1
+      text: that sounds really great ebony. im sure the spirits of the night and
+        jace are gona get along like a house on fire
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 2
+      text: ' DO NOT disrespect the spirits of darkness. You have no idea what I''m
+        capable of.'
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 2
+      text: ' Behold...my TRUE POWER. '
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 0
+      text: "I got nothing\u2026 so how about I treat you to a body pillow of your
+        choice from otakuexpress.com? Just give me the word."
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 0
+      text: '*tips fedora* '
+      isImage: 0
+      image: {fileID: 0}
     branches: []
+  sequenceIndex: 0
+  choiceTime: 0
   timeProduct: 40
+  newestGameObj: {fileID: 0}

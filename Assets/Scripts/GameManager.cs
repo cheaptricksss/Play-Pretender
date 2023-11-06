@@ -13,13 +13,13 @@ public class GameManager : MonoBehaviour
     public GameObject content; // dialogue obj parent
     public GameObject image; // image prefab 
 
-    private List<GameObject> currentChoicesOnScreen = new List<GameObject>();
+    public List<GameObject> currentChoicesOnScreen = new List<GameObject>();
     
     public List<Sequences> sequences = new List<Sequences>();
-    private int sequenceIndex = 0;
+    public int sequenceIndex = 0;
     private int dialogueIndex = 0;
 
-    private bool choiceTime = false;
+    public bool choiceTime = false;
     //ienumerator, waitAndPrint
 
     private void Awake()
@@ -60,14 +60,20 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (choiceTime == true)
+        {
+            Debug.Log("is in the if statement");
+            ClearChoiceList();
+            choiceTime = false;
+        }
     }
 
     //ienumerator, waitAndPrint variables
     private int charPerSec = 5;
     public float timeProduct = 1;
-    private GameObject newestGameObj;
+    public GameObject newestGameObj;
     private GameObject newestButtonObj;
+    public GameObject jsonsNote;
 
     //wait and print
     public IEnumerator waitAndPrint(dialogueObj dialogue)
@@ -106,15 +112,26 @@ public class GameManager : MonoBehaviour
         {
             newestGameObj = Instantiate(chatMessageObj, content.transform);
             ScrollElement(); // the refence goes in, the actual obj doesn't
-            choiceTime = true;
+            //choiceTime = true;
             for (int i = 0; i < sequences[sequenceIndex].branches.Count; i ++)// choices as buttons
             {
+                //works
                 newestButtonObj = Instantiate(choiceBox, choiceBoxContent.transform); // create and put in parent obj
+                //works
                 newestButtonObj.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = sequences[sequenceIndex].branches[i].choiceMsgs; //theres an error here
-                //adding the onclick event manually
-                newestButtonObj.GetComponent<Button>().onClick.AddListener(() => chooseDialogueOption(newestButtonObj.transform.GetChild(0).GetComponent<TextMeshProUGUI>())); // lambda expression
+                //adding the obj into the series
                 currentChoicesOnScreen.Add(newestButtonObj);
+                // need a way to add the onClick function to the prefab
+                //currentChoicesOnScreen[i].GetComponent<Button>().onClick.AddListener(() => chooseDialogueOption(newestButtonObj.transform.GetChild(0).GetComponent<TextMeshProUGUI>())); // lambda expression, doesn't work
+                newestButtonObj = null;
             }
+
+            //special event ------------------------------------ sequence specific event
+            if (sequenceIndex == 2)
+            {
+                jsonsNote.SetActive(true);
+            }
+
             sequenceIndex++;
             dialogueIndex = 0;
         }
@@ -147,47 +164,58 @@ public class GameManager : MonoBehaviour
         newestGameObj.GetComponent <TextMeshProUGUI>().text += " said " + sequences[sequenceIndex].messages[dialogueIndex].text;
     }
 
-    public void onClick()
-    {
-        //chooseDialogueOption(TMP_Text txt);
-    }
+    //public void chooseDialogueOption(TMP_Text txt) //when the player makes (clicks the button) a choice
+    //{
+    //    Debug.Log("Button Has Been Clicked");
+    //    Debug.Log("TMPtext is: " + txt.text);
+    //    choiceTime = false;
+    //    //if the chosen dialogue has flavor text, add the flavor text inside the next Sequence texts (to the start)
+    //    for (int i = 0; i < sequences[sequenceIndex - 1].branches.Count; i++)
+    //    {
+    //        if (sequences[sequenceIndex - 1].branches[i].choiceMsgs == txt.text)
+    //        {
+    //            //Debug.Log("Branch had more than 0 elements");
+    //            if (sequences[sequenceIndex - 1].branches[i].flavorDialogues.Count != 0)
+    //            {
+    //                Debug.Log("Branch had more than 0 elements");
+    //                Debug.Log(sequences[sequenceIndex - 1].branches[i].flavorDialogues.Count);
+    //                for (int l = 0; l < sequences[sequenceIndex - 1].branches[i].flavorDialogues.Count; l++)
+    //                {
+    //                    sequences[sequenceIndex].messages.Insert(0, sequences[sequenceIndex - 1].branches[i].flavorDialogues[i]);
+    //                }
+    //            }
+    //            else Debug.Log("not more than 0"); 
+    //            break;
+    //        }
+    //    }
+    //    //delete all the choice boxes at the end
+    //    for (int i = 0; i < currentChoicesOnScreen.Count; i++)
+    //    {
+    //        Debug.Log(currentChoicesOnScreen.Count);
+    //        Destroy(currentChoicesOnScreen[0]); // delete the obj on screen
+    //        currentChoicesOnScreen.RemoveAt(0); // delete the reference to that obj
+    //    }
 
-    public void chooseDialogueOption(TMP_Text txt) //when the player makes (clicks the button) a choice
+    //    //while (currentChoicesOnScreen.Count != 0)
+    //    //{
+    //    //    Destroy(currentChoicesOnScreen[0]); // delete the obj on screen
+    //    //    currentChoicesOnScreen.RemoveAt(0); // delete the reference to that obj
+    //    //}
+    //    currentChoicesOnScreen.TrimExcess();
+    //    //start the couratine
+    //    StartCoroutine(waitAndPrint(sequences[sequenceIndex].messages[dialogueIndex]));
+    //}
+
+    public void ClearChoiceList()
     {
-        Debug.Log("Button Has Been Clicked");
-        Debug.Log("TMPtext is: " + txt);
-        choiceTime = false;
-        //if the chosen dialogue has flavor text, add the flavor text inside the next Sequence texts (to the start)
-        for (int i = 0; i < sequences[sequenceIndex - 1].branches.Count; i++)
-        {
-            if (sequences[sequenceIndex - 1].branches[i].choiceMsgs == txt.text)
-            {
-                Debug.Log("Branch had more than 0 elements");
-                if (sequences[sequenceIndex - 1].branches[i].flavorDialogues.Count != 0)
-                {
-                    for (int l = 0; l < sequences[sequenceIndex - 1].branches[i].flavorDialogues.Count; l++)
-                    {
-                        sequences[sequenceIndex].messages.Insert(0, sequences[sequenceIndex - 1].branches[i].flavorDialogues[i]);
-                    }
-                }
-                break;
-            }
-        }
-        //delete all the choice boxes at the end
         for (int i = 0; i < currentChoicesOnScreen.Count; i++)
         {
             Debug.Log(currentChoicesOnScreen.Count);
-            Destroy(currentChoicesOnScreen[0]); // delete the obj on screen
-            currentChoicesOnScreen.RemoveAt(0); // delete the reference to that obj
+            Destroy(currentChoicesOnScreen[i]); // delete the obj on screen
+            //currentChoicesOnScreen.RemoveAt(i); // delete the reference to that obj
         }
-
-        //while (currentChoicesOnScreen.Count != 0)
-        //{
-        //    Destroy(currentChoicesOnScreen[0]); // delete the obj on screen
-        //    currentChoicesOnScreen.RemoveAt(0); // delete the reference to that obj
-        //}
+        currentChoicesOnScreen.Clear();
         currentChoicesOnScreen.TrimExcess();
-        //start the couratine
-        StartCoroutine(waitAndPrint(sequences[sequenceIndex].messages[dialogueIndex]));
+        Debug.Log("choices left in the list"+currentChoicesOnScreen.Count);
     }
 }

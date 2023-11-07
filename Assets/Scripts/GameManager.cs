@@ -11,7 +11,9 @@ public class GameManager : MonoBehaviour
     public GameObject choiceBox; // choices (button objs)
     public GameObject choiceBoxContent; // the choice obj parent
     public GameObject content; // dialogue obj parent
-    public GameObject image; // image prefab 
+
+    public GameObject image; // image prefab
+    private float imageWidth = 200;
 
     public List<GameObject> currentChoicesOnScreen = new List<GameObject>();
     
@@ -54,6 +56,24 @@ public class GameManager : MonoBehaviour
     void Start() //start printing the messages as soon as the game starts 
     {
         //start couratine
+        newestGameObj = Instantiate(chatMessageObj, content.transform);
+
+        ScrollElement(); // the refence goes in, the actual obj doesn't
+
+        //adding an immage
+        if (sequences[sequenceIndex].messages[dialogueIndex].isImage == true)
+        { // should the image be only image or the text aswell?
+
+            //Debug.Log("In Image If Statetment");
+            GameObject newImObj = Instantiate(image, content.transform);
+            newImObj.GetComponent<Image>().sprite = sequences[sequenceIndex].messages[dialogueIndex].image;
+            //Vector2 dimensions = sequences[sequenceIndex].messages[dialogueIndex].image.
+            //newImObj.GetComponent<Image>().rectTransform.sizeDelta = new Vector2(100, 150);
+            newImObj.GetComponent<Image>().rectTransform.sizeDelta =
+                new Vector2(imageWidth,
+                imageWidth * sequences[sequenceIndex].messages[dialogueIndex].image.bounds.size.y/ sequences[sequenceIndex].messages[dialogueIndex].image.bounds.size.x);
+        }
+        dialogueIndex++;
         StartCoroutine(waitAndPrint(sequences[sequenceIndex].messages[dialogueIndex]));
     }
 
@@ -98,9 +118,15 @@ public class GameManager : MonoBehaviour
                 //Debug.Log("In Image If Statetment");
                 GameObject newImObj = Instantiate(image, content.transform);
                 newImObj.GetComponent<Image>().sprite = sequences[sequenceIndex].messages[dialogueIndex].image;
-                newImObj.GetComponent<Image>().rectTransform.sizeDelta = new Vector2(100, 150);
+
+                //newImObj.GetComponent<Image>().rectTransform.sizeDelta = new Vector2(100, 150);
+                newImObj.GetComponent<Image>().rectTransform.sizeDelta =
+                    new Vector2(imageWidth,
+                    imageWidth * sequences[sequenceIndex].messages[dialogueIndex].image.bounds.size.y / sequences[sequenceIndex].messages[dialogueIndex].image.bounds.size.x);
+
             }
             //GameObject newObj = Instantiate(chatMessageObj);
+
             //ScrollElement(newObj);
 
             Debug.Log(dialogueIndex);
@@ -120,6 +146,10 @@ public class GameManager : MonoBehaviour
                 newestButtonObj = Instantiate(choiceBox, choiceBoxContent.transform); // create and put in parent obj
                 //works
                 newestButtonObj.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = sequences[sequenceIndex].branches[i].choiceMsgs; //theres an error here
+
+                //change the properties of the button manually
+                //newestButtonObj.GetComponent<TextMeshProUGUI>().rectTransform.sizeDelta = new Vector2(450, 30);
+
                 //adding the obj into the series
                 currentChoicesOnScreen.Add(newestButtonObj);
                 // need a way to add the onClick function to the prefab
@@ -144,7 +174,7 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public GameObject scrollBarObj;
+    //public GameObject scrollBarObj;
     private void ScrollElement() //  nudging all the elements down, creating the text
     {
         // maybe have a separate list of object kept in the game manager about the sent texts
@@ -174,7 +204,8 @@ public class GameManager : MonoBehaviour
         int maxChar = 33;
         newestGameObj.GetComponent<TextMeshProUGUI>().rectTransform.sizeDelta =
             new Vector2(186f, (30 * ((newestGameObj.GetComponent<TextMeshProUGUI>().text.Length/maxChar) + 1)));
-        scrollBarObj.GetComponent<Scrollbar>().value = 0;
+
+        //scrollBarObj.GetComponent<Scrollbar>().value = 0;
         //newestGameObj.GetComponent<TextMeshProUGUI>().textInfo.lineCount
     }
 

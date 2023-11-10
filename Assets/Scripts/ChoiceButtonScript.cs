@@ -30,8 +30,8 @@ public class ChoiceButtonScript : MonoBehaviour
                     }
                 }
                 //create the
-                GameManager.instance.newestGameObj = Instantiate(GameManager.instance.chatMessageObj, GameManager.instance.content.transform);
-                GameManager.instance.newestGameObj.GetComponent<TextMeshProUGUI>().text = ".json said " + txt.text;
+                //GameManager.instance.newestGameObj = Instantiate(GameManager.instance.chatMessageObj, GameManager.instance.content.transform);
+                //GameManager.instance.newestGameObj.GetComponent<TextMeshProUGUI>().text = "<color=#C23B3B>.json</color> said " + txt.text;
 
                 break;// end the loop after finding the item
             }

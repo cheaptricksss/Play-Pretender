@@ -91,6 +91,7 @@ public class GameManager : MonoBehaviour
     //ienumerator, waitAndPrint variables
     private int charPerSec = 5;
     public float timeProduct = 1;
+    private float charBuffer = 50;
     public GameObject newestGameObj;
     private GameObject newestButtonObj;
     public GameObject jsonsNote;
@@ -99,7 +100,7 @@ public class GameManager : MonoBehaviour
     public IEnumerator waitAndPrint(dialogueObj dialogue)
     {
         //float waitTime = (dialogue.text.Length) * (Time.deltaTime*timeProduct/Mathf.Log(dialogue.text.Length)); // wait this time, then restart
-        float waitTime = Mathf.Log(dialogue.text.Length) * Time.deltaTime * timeProduct;
+        float waitTime = Mathf.Log(dialogue.text.Length + charBuffer) * Time.deltaTime * timeProduct;
         //Debug.Log(sequences[sequenceIndex].messages.Count); // shows only once
         yield return new WaitForSeconds(waitTime);
 
@@ -137,25 +138,32 @@ public class GameManager : MonoBehaviour
         }
         else if (sequenceIndex != sequences.Count - 1)// a choice needs to be made, dialogue index is at the end
         {
-            newestGameObj = Instantiate(chatMessageObj, content.transform);
-            ScrollElement(); // the refence goes in, the actual obj doesn't
-            //choiceTime = true;
-            for (int i = 0; i < sequences[sequenceIndex].branches.Count; i ++)// choices as buttons
+            if (sequences[sequenceIndex].branches.Count != 0)
             {
-                //works
-                newestButtonObj = Instantiate(choiceBox, choiceBoxContent.transform); // create and put in parent obj
-                //works
-                newestButtonObj.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = sequences[sequenceIndex].branches[i].choiceMsgs; //theres an error here
+                newestGameObj = Instantiate(chatMessageObj, content.transform);
+                ScrollElement(); // the refence goes in, the actual obj doesn't
+                                 //choiceTime = true;
+                for (int i = 0; i < sequences[sequenceIndex].branches.Count; i++)// choices as buttons
+                {
+                    //works
+                    newestButtonObj = Instantiate(choiceBox, choiceBoxContent.transform); // create and put in parent obj
+                                                                                          //works
+                    newestButtonObj.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = sequences[sequenceIndex].branches[i].choiceMsgs;
+                    newestButtonObj.GetComponent<RectTransform>().sizeDelta = new Vector2(450, 30);
+                    //change the properties of the button manually
+                    //newestButtonObj.GetComponent<TextMeshProUGUI>().rectTransform.sizeDelta = new Vector2(450, 30);
 
-                //change the properties of the button manually
-                //newestButtonObj.GetComponent<TextMeshProUGUI>().rectTransform.sizeDelta = new Vector2(450, 30);
-
-                //adding the obj into the series
-                currentChoicesOnScreen.Add(newestButtonObj);
-                // need a way to add the onClick function to the prefab
-                //currentChoicesOnScreen[i].GetComponent<Button>().onClick.AddListener(() => chooseDialogueOption(newestButtonObj.transform.GetChild(0).GetComponent<TextMeshProUGUI>())); // lambda expression, doesn't work
-                newestButtonObj = null;
+                    //adding the obj into the series
+                    currentChoicesOnScreen.Add(newestButtonObj);
+                    // need a way to add the onClick function to the prefab
+                    //currentChoicesOnScreen[i].GetComponent<Button>().onClick.AddListener(() => chooseDialogueOption(newestButtonObj.transform.GetChild(0).GetComponent<TextMeshProUGUI>())); // lambda expression, doesn't work
+                    newestButtonObj = null;
+                }
             }
+            //else
+            //{
+            //    StartCoroutine(nextChat());
+            //}
 
             //special event ------------------------------------ sequence specific event
             if (sequenceIndex == 2)
@@ -165,11 +173,16 @@ public class GameManager : MonoBehaviour
 
             sequenceIndex++;
             dialogueIndex = 0;
-        }
-        else // the end of the game, no more dialogues left
-        {
 
+            if (sequences[sequenceIndex - 1].branches.Count == 0)
+            {
+                StartCoroutine(nextChat());
+            }
         }
+        //else // the end of the game, no more dialogues left
+        //{
+
+        //}
         //}// while true's  squigly line
     }
 
@@ -180,19 +193,19 @@ public class GameManager : MonoBehaviour
         // maybe have a separate list of object kept in the game manager about the sent texts
         if (sequences[sequenceIndex].messages[dialogueIndex].userTag == character.num1Wa1fuLVR) // choosing the names from the public enum
         {
-            newestGameObj.GetComponent<TextMeshProUGUI>().text = "num1Wa1fuLVR";
+            newestGameObj.GetComponent<TextMeshProUGUI>().text = "<color=#64F08C>num1Wa1fuLVR</color>";
         }
         else if (sequences[sequenceIndex].messages[dialogueIndex].userTag == character.kris)
         {
-            newestGameObj.GetComponent<TextMeshProUGUI>().text = "kris";
+            newestGameObj.GetComponent<TextMeshProUGUI>().text = "<color=#5DADE2>kris</color>";
         }
         else if (sequences[sequenceIndex].messages[dialogueIndex].userTag == character.d4rknessWay)
         {
-            newestGameObj.GetComponent<TextMeshProUGUI>().text = "d4rknessWay";
+            newestGameObj.GetComponent<TextMeshProUGUI>().text = "<color=#D99FE4>d4rknessWay</color>";
         }
         else if (sequences[sequenceIndex].messages[dialogueIndex].userTag == character.json)
         {
-            newestGameObj.GetComponent<TextMeshProUGUI>().text = ".json";
+            newestGameObj.GetComponent<TextMeshProUGUI>().text = "<color=#C23B3B>.json</color>";
         }
         newestGameObj.GetComponent <TextMeshProUGUI>().text += " said " + sequences[sequenceIndex].messages[dialogueIndex].text;
 
@@ -262,5 +275,30 @@ public class GameManager : MonoBehaviour
         currentChoicesOnScreen.Clear();
         currentChoicesOnScreen.TrimExcess();
         Debug.Log("choices left in the list"+currentChoicesOnScreen.Count);
+    }
+
+    //new chat couratine
+    public IEnumerator nextChat()
+    {
+        //write that the new chatis loading
+        newestGameObj = Instantiate(chatMessageObj, content.transform);
+        newestGameObj.GetComponent<TextMeshProUGUI>().text = "new chat loading";
+
+
+        yield return new WaitForSeconds(300*Time.deltaTime); // wait for 5 seconds
+
+        //transfer all the previous chat and delete contents
+
+
+        //delete all contents
+        if (content.transform.childCount > 0)
+        {
+            for (int i = 0; i < content.transform.childCount; i++) // pray to god it works
+            {
+                Destroy(content.transform.GetChild(i).gameObject);
+            }
+        }
+
+        StartCoroutine(waitAndPrint(sequences[sequenceIndex].messages[dialogueIndex]));
     }
 }

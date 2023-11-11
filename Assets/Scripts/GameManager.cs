@@ -24,6 +24,14 @@ public class GameManager : MonoBehaviour
     public bool choiceTime = false;
     //ienumerator, waitAndPrint
 
+    // text  components of the inbox
+    public TMP_Text inboxTxt;
+    public int unopenedMessages = 0;
+
+
+    //knowledge check
+    public int suspicionLvl = 0;
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -73,11 +81,14 @@ public class GameManager : MonoBehaviour
                 new Vector2(imageWidth,
                 imageWidth * sequences[sequenceIndex].messages[dialogueIndex].image.bounds.size.y/ sequences[sequenceIndex].messages[dialogueIndex].image.bounds.size.x);
         }
+        prevDialogueTextLength = sequences[sequenceIndex].messages[dialogueIndex].text.Length;
         dialogueIndex++;
+
+        inboxTxt.text = "Inbox";
         StartCoroutine(waitAndPrint(sequences[sequenceIndex].messages[dialogueIndex]));
     }
 
-    // Update is called once per frame
+    //
     void Update()
     {
         if (choiceTime == true)
@@ -95,15 +106,16 @@ public class GameManager : MonoBehaviour
     public GameObject newestGameObj;
     private GameObject newestButtonObj;
     public GameObject jsonsNote;
+    private int prevDialogueTextLength;
 
     //wait and print
     public IEnumerator waitAndPrint(dialogueObj dialogue)
     {
         //float waitTime = (dialogue.text.Length) * (Time.deltaTime*timeProduct/Mathf.Log(dialogue.text.Length)); // wait this time, then restart
-        float waitTime = Mathf.Log(dialogue.text.Length + charBuffer) * Time.deltaTime * timeProduct;
+        float waitTime = Mathf.Log(prevDialogueTextLength + charBuffer) * Time.deltaTime * timeProduct;
         //Debug.Log(sequences[sequenceIndex].messages.Count); // shows only once
         yield return new WaitForSeconds(waitTime);
-
+        prevDialogueTextLength = dialogue.text.Length;
         //after waiting is done
         if (dialogueIndex != sequences[sequenceIndex].messages.Count-1)
         {
@@ -138,6 +150,7 @@ public class GameManager : MonoBehaviour
         }
         else if (sequenceIndex != sequences.Count - 1)// a choice needs to be made, dialogue index is at the end
         {
+            prevDialogueTextLength = 0;
             if (sequences[sequenceIndex].branches.Count != 0)
             {
                 newestGameObj = Instantiate(chatMessageObj, content.transform);
@@ -149,7 +162,7 @@ public class GameManager : MonoBehaviour
                     newestButtonObj = Instantiate(choiceBox, choiceBoxContent.transform); // create and put in parent obj
                                                                                           //works
                     newestButtonObj.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = sequences[sequenceIndex].branches[i].choiceMsgs;
-                    newestButtonObj.GetComponent<RectTransform>().sizeDelta = new Vector2(450, 30);
+                    newestButtonObj.GetComponent<RectTransform>().sizeDelta = new Vector2(450, 50);
                     //change the properties of the button manually
                     //newestButtonObj.GetComponent<TextMeshProUGUI>().rectTransform.sizeDelta = new Vector2(450, 30);
 
@@ -168,7 +181,17 @@ public class GameManager : MonoBehaviour
             //special event ------------------------------------ sequence specific event
             if (sequenceIndex == 2)
             {
-                jsonsNote.SetActive(true);
+                currentPopUpButton = Instantiate(popUpButton, inboxButtonHolder.transform); //create pop up button
+                currentPopUpButton.GetComponent<InboxButton>().attachedPopUp = Instantiate(popUp, Canvas.transform);//create pop up
+                currentPopUpButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Note from .json";
+                currentPopUpButton.GetComponent<RectTransform>().sizeDelta = new Vector2(311.647f, 80);
+                //create the writing inside the pop up
+                newestGameObj = Instantiate(chatMessageObj, currentPopUpButton.GetComponent<InboxButton>().attachedPopUp.GetComponent<PopUp>().contentBox.transform);
+                newestGameObj.GetComponent<TextMeshProUGUI>().text = "TO: json\n" +
+                    "FROM: Unknown Sender\nHello. I hope this message reaches you. I don’t have much time." +
+                    " You are Jason Lastname. You are an 18 year old in Acorn Falls. You are interested in " +
+                    "the band ‘Nuclear Love Story’ and shopping at Hot Topic. There was an incident in Acorn " +
+                    "Falls High School between you and your friend, Jeff.";
             }
 
             sequenceIndex++;
@@ -207,7 +230,7 @@ public class GameManager : MonoBehaviour
         {
             newestGameObj.GetComponent<TextMeshProUGUI>().text = "<color=#C23B3B>.json</color>";
         }
-        newestGameObj.GetComponent <TextMeshProUGUI>().text += " said " + sequences[sequenceIndex].messages[dialogueIndex].text;
+        newestGameObj.GetComponent <TextMeshProUGUI>().text += " said: " + sequences[sequenceIndex].messages[dialogueIndex].text;
 
         // change the  heigth and width of  the text mesh pro obj according to the amount of lines there is
         // currently thinks that theres 1 line which equals to  0
@@ -277,28 +300,50 @@ public class GameManager : MonoBehaviour
         Debug.Log("choices left in the list"+currentChoicesOnScreen.Count);
     }
 
+    public GameObject popUpButton;
+    public GameObject popUp;
+    public GameObject Canvas;
+    public GameObject inboxButtonHolder;
+    private GameObject currentPopUpButton;
+    private int chatNumInboxTxt = 0;
     //new chat couratine
     public IEnumerator nextChat()
     {
         //write that the new chatis loading
         newestGameObj = Instantiate(chatMessageObj, content.transform);
         newestGameObj.GetComponent<TextMeshProUGUI>().text = "new chat loading";
+        Debug.Log(content.transform.childCount);
 
+        yield return new WaitForSeconds(30*Time.deltaTime); // wait for 5 seconds
 
-        yield return new WaitForSeconds(300*Time.deltaTime); // wait for 5 seconds
-
-        //transfer all the previous chat and delete contents
-
-
+        //transfer all the previous chat
+        currentPopUpButton = Instantiate(popUpButton, inboxButtonHolder.transform);
+        currentPopUpButton.GetComponent<InboxButton>().attachedPopUp = Instantiate(popUp, Canvas.transform);
+        chatNumInboxTxt++;
+        currentPopUpButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Chat " + chatNumInboxTxt;
+        currentPopUpButton.GetComponent<RectTransform>().sizeDelta = new Vector2(311.647f, 80);
         //delete all contents
         if (content.transform.childCount > 0)
         {
-            for (int i = 0; i < content.transform.childCount; i++) // pray to god it works
+            for (int i = content.transform.childCount - 1; i >-1; i--) // pray to god it works
             {
-                Destroy(content.transform.GetChild(i).gameObject);
+                //it gets addedd here, that works
+                content.transform.GetChild(i).gameObject.transform.parent =
+                    currentPopUpButton.GetComponent<InboxButton>().attachedPopUp.GetComponent<PopUp>().contentBox.transform;
             }
         }
+        //close the pop up
+        currentPopUpButton.GetComponent<InboxButton>().attachedPopUp.SetActive(false);
+
+        // you have mail!
+        unopenedMessages++;
+        inboxTxt.text = "Inbox (" + unopenedMessages+ ")";
 
         StartCoroutine(waitAndPrint(sequences[sequenceIndex].messages[dialogueIndex]));
+    }
+
+    public void closeSelectedPopUp(GameObject popUp)
+    {
+        popUp.SetActive(false);
     }
 }

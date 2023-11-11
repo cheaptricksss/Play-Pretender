@@ -4,15 +4,34 @@ using UnityEngine;
 
 public class InboxButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public bool newMail = true;
+    public GameObject attachedPopUp;
+
+    public void OpenPopUp()
     {
-        
+        if (newMail == true)
+        {
+            //change the text on the inbox tag
+            newMail = false;
+            GameManager.instance.unopenedMessages--;
+            if (GameManager.instance.unopenedMessages > 0)
+            {
+                GameManager.instance.inboxTxt.text = "Inbox (" + GameManager.instance.unopenedMessages + ")";
+
+            }
+            else
+            {
+                GameManager.instance.inboxTxt.text = "Inbox";
+            }
+        }
+
+        //activate the object
+        attachedPopUp.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ClosePopUp()
     {
-        
+        //deactivate the object
+        GameManager.instance.closeSelectedPopUp(attachedPopUp);
     }
 }

@@ -11,19 +11,24 @@ public class ChoiceButtonScript : MonoBehaviour
     public void chooseDialogueOption() //when the player makes (clicks the button) a choice
     {
         //Debug.Log("Button Has Been Clicked");
-        Debug.Log("TMPtext is: " + txt.text);
+        //Debug.Log("TMPtext is: " + txt.text);
         //GameManager.instance.choiceTime = true;
         //if the chosen dialogue has flavor text, add the flavor text inside the next Sequence texts (to the start)
         for (int i = 0; i < GameManager.instance.sequences[GameManager.instance.sequenceIndex - 1].branches.Count; i++)
         {
             if (GameManager.instance.sequences[GameManager.instance.sequenceIndex - 1].branches[i].choiceMsgs == txt.text) //find the one with the matching text
             {
+                if (GameManager.instance.sequences[GameManager.instance.sequenceIndex - 1].branches[i].isKnowladgeCheck == true &&
+                    GameManager.instance.sequences[GameManager.instance.sequenceIndex - 1].branches[i].suspicion == Choices.knowladgeCheck.suspicious)
+                {
+                    GameManager.instance.suspicionLvl++;  
+                }
 
                 if (GameManager.instance.sequences[GameManager.instance.sequenceIndex - 1].branches[i].flavorDialogues.Count != 0)
                 {
                     //Debug.Log("Branch had more than 0 elements");
                     //Debug.Log(GameManager.instance.sequences[GameManager.instance.sequenceIndex - 1].branches[i].flavorDialogues.Count);
-                    for (int l = 0; l < GameManager.instance.sequences[GameManager.instance.sequenceIndex - 1].branches[i].flavorDialogues.Count; l++)
+                    for (int l = GameManager.instance.sequences[GameManager.instance.sequenceIndex - 1].branches[i].flavorDialogues.Count - 1; l > -1; l--)
                     {
                         Debug.Log(GameManager.instance.sequenceIndex);
                         GameManager.instance.sequences[GameManager.instance.sequenceIndex].messages.Insert(0, GameManager.instance.sequences[(GameManager.instance.sequenceIndex) - 1].branches[i].flavorDialogues[l]);
@@ -40,6 +45,7 @@ public class ChoiceButtonScript : MonoBehaviour
         //GameManager.instance.ClearChoiceList(); // call clearchoice  list
         GameManager.instance.choiceTime = true;
         //start the couratine
+        Debug.Log(GameManager.instance.suspicionLvl);
         GameManager.instance.StartCoroutine(GameManager.instance.waitAndPrint(GameManager.instance.sequences[GameManager.instance.sequenceIndex].messages[0]));
     }
 }

@@ -77,15 +77,33 @@ MonoBehaviour:
       image: {fileID: 0}
     branches:
     - choiceMsgs: 'Nah I didnt get anything lol '
-      flavorDialogues: []
+      flavorDialogues:
+      - userTag: 3
+        text: 'Nah I didnt get anything lol '
+        isImage: 0
+        image: {fileID: 0}
+      isKnowladgeCheck: 0
+      suspicion: 0
     - choiceMsgs: My mom got me an ipod nano
-      flavorDialogues: []
+      flavorDialogues:
+      - userTag: 3
+        text: My mom got me an ipod nano
+        isImage: 0
+        image: {fileID: 0}
+      isKnowladgeCheck: 0
+      suspicion: 0
     - choiceMsgs: Wait its my birthday today?
       flavorDialogues:
+      - userTag: 3
+        text: Wait its my birthday today?
+        isImage: 0
+        image: {fileID: 0}
       - userTag: 2
         text: Be so incredibly for real right now.
         isImage: 0
         image: {fileID: 0}
+      isKnowladgeCheck: 0
+      suspicion: 0
   - messages:
     - userTag: 0
       text: Oh. Oops. Happy birthday Jason.
@@ -97,9 +115,21 @@ MonoBehaviour:
       image: {fileID: 0}
     branches:
     - choiceMsgs: 'Im doing okay i guess '
-      flavorDialogues: []
+      flavorDialogues:
+      - userTag: 3
+        text: 'Im doing okay i guess '
+        isImage: 0
+        image: {fileID: 0}
+      isKnowladgeCheck: 0
+      suspicion: 0
     - choiceMsgs: 'Im surviving '
-      flavorDialogues: []
+      flavorDialogues:
+      - userTag: 3
+        text: 'Im surviving '
+        isImage: 0
+        image: {fileID: 0}
+      isKnowladgeCheck: 0
+      suspicion: 0
   - messages:
     - userTag: 0
       text: Yeah? Any updates on Jeff?
@@ -124,12 +154,22 @@ MonoBehaviour:
     branches:
     - choiceMsgs: "Hes still\u2026 in the hospital "
       flavorDialogues:
+      - userTag: 3
+        text: "Hes still\u2026 in the hospital "
+        isImage: 0
+        image: {fileID: 0}
       - userTag: 2
         text: I envy his proximity to the eternal night.
         isImage: 0
         image: {fileID: 0}
+      isKnowladgeCheck: 1
+      suspicion: 1
     - choiceMsgs: 'We had lunch the other day actually '
       flavorDialogues:
+      - userTag: 3
+        text: 'We had lunch the other day actually '
+        isImage: 0
+        image: {fileID: 0}
       - userTag: 0
         text: "Wait. He\u2019s not in a coma anymore?"
         isImage: 0
@@ -139,6 +179,8 @@ MonoBehaviour:
           of souls from singing songs of the night.
         isImage: 0
         image: {fileID: 0}
+      isKnowladgeCheck: 1
+      suspicion: 0
   - messages:
     - userTag: 0
       text: "Erm. Anyways. I hope you\u2019re still not beating yourself over what
@@ -162,7 +204,7 @@ MonoBehaviour:
     - userTag: 1
       text: i drew you a little somethin'
       isImage: 1
-      image: {fileID: 0}
+      image: {fileID: 21300000, guid: a94f49caeb54f4b45aa545d602dedaee, type: 3}
     - userTag: 0
       text: "Sugoi\u2026"
       isImage: 0
@@ -202,11 +244,282 @@ MonoBehaviour:
       isImage: 0
       image: {fileID: 0}
     - userTag: 0
-      text: '*tips fedora* '
+      text: tips fedora
       isImage: 0
       image: {fileID: 0}
     branches: []
+  - messages:
+    - userTag: 2
+      text: I have ventured to the Hot Topic at the Cross Country Mall. It was a
+        horrific yet enlightening experience.
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 1
+      text: 'horrific? really now '
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 2
+      text: "I am sickened by the daylight and the vile actions of preppy day-walkers
+        (the new term I have coined for the humans I live amongst). The Hot Topic
+        itself played perfectly acceptable music. However, my ears were cursed by
+        the blood-curdling sound of Justice Beaver\u2019s \u201CBabygirl\u201D the
+        moment I set foot outside. "
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 1
+      text: i havent been to CCM in a while because the meets got weird. like this
+        one guy Glamourfur41 started getting REALLY political. and i think he got
+        swatted like a week after i stopped going?
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 2
+      text: That is quite unfortunate.
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 1
+      text: nah he was a jerk anyway
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 0
+      text: Did I hear Hot Topic?! Aren't they doing a collab with Hitsume Miko right
+        now?!
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 0
+      text: "Hitsume Miko... So kawaii desu\u2026"
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 2
+      text: "That is VILE. Your \u201CHitsume Miko\u201D is poisoning the very notion
+        of what Hot Topic is emblematic of. I do not want to see two-dimensional
+        girls with cyan pigtails in my place of refuge."
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 0
+      text: 'Nani?! If anything, I bet Miko-Chan brought some well needed customers
+        to that dump of a place! '
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 1
+      text: 'why are you guys like this? jace back me up here is this a silly thing
+        to get mad about '
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 2
+      text: 'You DID NOT just say that. How DARE YOU. '
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 2
+      text: I, in fact, ENJOY being the only individual within the onyx-painted walls
+        of my safe besides Earl the cashier. He is the only one who truly understands
+        me and my inner complexities.
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 2
+      text: "I wouldn\u2019t want neckbearded degenerates like you infiltrating Hot
+        Topic\u2019s sanctity. "
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 1
+      text: wtf
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 0
+      text: "Kuso\u2026 Curse your flavorful language\u2026 *activates Sharingan.
+        My eyes glow red* But you fell into my trap card! ARGUMENT NO JUTSU!!! "
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 1
+      text: ' jace please'
+      isImage: 0
+      image: {fileID: 0}
+    branches:
+    - choiceMsgs: "Heh\u2026I see the chaos has begun. "
+      flavorDialogues:
+      - userTag: 3
+        text: "Heh\u2026I see the chaos has begun. "
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 1
+        text: Jason. SERIOUSLY??
+        isImage: 0
+        image: {fileID: 0}
+      isKnowladgeCheck: 0
+      suspicion: 0
+    - choiceMsgs: "You\u2019re right Ebony. Kai cannot fathom the darkness inside
+        of us."
+      flavorDialogues:
+      - userTag: 3
+        text: "You\u2019re right Ebony. Kai cannot fathom the darkness inside of
+          us."
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 1
+        text: Jason. SERIOUSLY??
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 0
+        text: 'Tch. Jason-kun, you baka... I thought you were my tomodachi. '
+        isImage: 0
+        image: {fileID: 0}
+      isKnowladgeCheck: 0
+      suspicion: 0
+    - choiceMsgs: "Sou desu, Kai-kun. Hitsume Miko is so subarashii. Watashitachi
+        wa so misunderstood by our \u201Cgoth\u201D tomodachies."
+      flavorDialogues:
+      - userTag: 3
+        text: "Sou desu, Kai-kun. Hitsume Miko is so subarashii. Watashitachi wa
+          so misunderstood by our \u201Cgoth\u201D tomodachies."
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 1
+        text: Jason. SERIOUSLY??
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 2
+        text: "You sicken me, Jason. This is why I don\u2019t trust so called \u201Cemos.\u201D
+          You don\u2019t understand the true essence of our suffering.  "
+        isImage: 0
+        image: {fileID: 0}
+      isKnowladgeCheck: 0
+      suspicion: 0
+  - messages:
+    - userTag: 1
+      text: ' alright everyone emergency change of topic '
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 1
+      text: ' listen to any good MUSIC lately?'
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 1
+      text: ' ive been catching up with counting weekends since theyve been on the
+        radio a lot '
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 1
+      text: '  i like listening while i draw so ive basically cleared the entire
+        discography at this point '
+      isImage: 0
+      image: {fileID: 0}
+    - userTag: 2
+      text: "  Counting Weekends? Really? I didn\u2019t expect you to subject your
+        ears to that mainstream garbage.  "
+      isImage: 0
+      image: {fileID: 0}
+    branches:
+    - choiceMsgs: Ebony XD yeah kris you would be the type to listen to trash like
+        that. go listen to a real song like welcome to the grey party by nuclear
+        love story instead
+      flavorDialogues:
+      - userTag: 3
+        text: Ebony XD yeah kris you would be the type to listen to trash like that.
+          go listen to a real song like welcome to the grey party by nuclear love
+          story instead
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 1
+        text: :( you guys are all impossible. jace i thought maybe youd be less mean
+          these days but oh well :/
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 2
+        text: I knew I could trust you, Jason. As always. Perhaps I will invite you
+          to my next blood sacrifice as a symbol of your trustworthiness.
+        isImage: 0
+        image: {fileID: 0}
+      isKnowladgeCheck: 1
+      suspicion: 1
+    - choiceMsgs: 'I''ve actually been listening to counting weekends too, kris '
+      flavorDialogues:
+      - userTag: 3
+        text: 'I''ve actually been listening to counting weekends too, kris '
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 1
+        text: oh cool!! do you have a favorite song :3 ??
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 2
+        text: "Jason\u2026this isn\u2019t you\u2026I trusted you. But you\u2019re
+          just like all the others."
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 0
+        text: "Yeah, Jason-kun\u2026 I didn\u2019t think you would even bother with
+          other genres."
+        isImage: 0
+        image: {fileID: 0}
+      isKnowladgeCheck: 1
+      suspicion: 0
+    - choiceMsgs: Hitsume Miko... doki-doki...
+      flavorDialogues:
+      - userTag: 3
+        text: Hitsume Miko... doki-doki...
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 0
+        text: Jason-kun...? But I thought you hate anime?
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 2
+        text: "Jason\u2026this isn\u2019t you\u2026I trusted you. But you\u2019re
+          just like all the others."
+        isImage: 0
+        image: {fileID: 0}
+      isKnowladgeCheck: 0
+      suspicion: 0
+  - messages: []
+    branches:
+    - choiceMsgs: What can i say, i have my opinions...
+      flavorDialogues:
+      - userTag: 3
+        text: What can i say, i have my opinions...
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 2
+        text: Hmph. *disappears into the omnipresent veil of darkness*
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 1
+        text: 0_0 well my change of topic attempt was a complete fail
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 1
+        text: see you all tomorrow i guess
+        isImage: 0
+        image: {fileID: 0}
+      isKnowladgeCheck: 0
+      suspicion: 0
+    - choiceMsgs: Have fun being wrong...
+      flavorDialogues:
+      - userTag: 3
+        text: Have fun being wrong...
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 2
+        text: Hmph. *disappears into the omnipresent veil of darkness*
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 1
+        text: ' 0_0 well my change of topic attempt was a complete fail'
+        isImage: 0
+        image: {fileID: 0}
+      - userTag: 1
+        text: see you all tomorrow i guess
+        isImage: 0
+        image: {fileID: 0}
+      isKnowladgeCheck: 0
+      suspicion: 0
   sequenceIndex: 0
   choiceTime: 0
-  timeProduct: 40
+  inboxTxt: {fileID: 0}
+  unopenedMessages: 0
+  suspicionLvl: 0
+  timeProduct: 30
   newestGameObj: {fileID: 0}
+  jsonsNote: {fileID: 0}
+  popUpButton: {fileID: 3729782073076106372, guid: 98fc27f507c6d44fab54743616b960d0, type: 3}
+  popUp: {fileID: 6294348227603355218, guid: 22e8f836afbf5495b8b9ebdc570edb8a, type: 3}
+  Canvas: {fileID: 0}
+  inboxButtonHolder: {fileID: 0}

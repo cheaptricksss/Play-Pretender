@@ -7781,7 +7781,7 @@ PrefabInstance:
       objectReference: {fileID: 1505773740}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.size
-      value: 8
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].branches.Array.size
@@ -7790,6 +7790,46 @@ PrefabInstance:
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].messages.Array.size
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].branches.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].branches.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].branches.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.size
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].branches.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].messages.Array.data[0].text
@@ -7815,6 +7855,336 @@ PrefabInstance:
         Is something the matter?
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[0].text
+      value: Jason-kun, you have been acting quite odd lately.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[1].text
+      value: "Has Jason become a prep? Disgusting\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[2].text
+      value: i guess its been easy to tell but ive been REALLY worried about you
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[3].text
+      value: "My vampire intuition senses something off here\u2026hm."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[4].text
+      value: jace... is there something you haven't told us?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[5].text
+      value: ever since the thing with jeff, and school ending... i dont wanna sound
+        too much like ebony here but its kinda like you died?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[6].text
+      value: "\u2026And not in a good way."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[7].text
+      value: its been months and i havent seen you ONCE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[8].text
+      value: and i know youve never been exactly the most social person but i would
+        describe the way youve been acting lately as actually chaotic
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[0].text
+      value: Jason-kun, we are your tomodachis. You can tell us anything. Gambare
+        gambare.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[1].text
+      value: "Well, i just havent been feeling like\u2026 myself lately?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[2].text
+      value: be more specific dude
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[3].text
+      value: Tell us, Jason. Unleash your inner demons into the calamity of the night.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[4].text
+      value: "Like, i just don't even know who i really am\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[5].text
+      value: i asked you to be more specific?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[6].text
+      value: "I was correct. Jason is undergoing a transformation of sorts\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[7].text
+      value: He's going into his villain arc. Heh. I know all too well what that's
+        like.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[8].text
+      value: It's alright, Jace. Embrace the darkness. We will embark into the shadows
+        of eternity hand in hand.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[9].text
+      value: hold on. i think he might mean something less stupid/edgy than that.
+        you guys have noticed how jace has been acting weird ever since school ended,
+        right? it keeps getting better, getting worse, getting better, over and over.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[0].text
+      value: Nani? What do you mean by that?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[1].text
+      value: yeah, what did you "do" exactly ??
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[2].text
+      value: "I got a message from myself just now and it says that i'm a program?
+        and that apparently i haven't been doing a good job\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[3].text
+      value: a good job of what?! what the hell do you mean by "program"?! ebony
+        this isn't another weird emo thing right?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[4].text
+      value: That's really deep, Jace. I didn't know you were so profound and poetic.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[5].text
+      value: WAIT IM SO LOST IS THIS JUST NORMAL TO YOU GUYS
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[6].text
+      value: But yes. This seems too "emo," even for Jace...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[7].text
+      value: "\u25D1\uFE4F\u25D0"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[8].text
+      value: Omg. This is just like Knife Performance Online.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[9].text
+      value: Wait so, we've been talking to a bot this entire time?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[0].text
+      value: LOL omg it actually doesn't know.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[1].text
+      value: hey! don't say IT
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[2].text
+      value: That's what it is, isn't it? A mere object.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[3].text
+      value: he definitely has a mind of his own
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[4].text
+      value: "So what now\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[5].text
+      value: We just accept it?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[6].text
+      value: wait, jace, you werent a robot the whole time, right? like at school
+        and everything??
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[7].text
+      value: i mean if you were that's kinda cool?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[8].text
+      value: He was too warm-blooded to be a robot.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[9].text
+      value: '*raises glasses* If he got a message from himself, then whoever sent
+        it must be the real Jason-kun.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[0].text
+      value: Do you want me to send a reply? maybe it's the "real" one and he can
+        give us some answers?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[1].text
+      value: I would like that.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[2].text
+      value: Yeah, let's do that.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[3].text
+      value: he definitely has a mind of his own
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[4].text
+      value: "So what now\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[5].text
+      value: We just accept it?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[6].text
+      value: wait, jace, you werent a robot the whole time, right? like at school
+        and everything??
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[7].text
+      value: i mean if you were that's kinda cool?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[8].text
+      value: He was too warm-blooded to be a robot.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[9].text
+      value: '*raises glasses* If he got a message from himself, then whoever sent
+        it must be the real Jason-kun.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[10].text
+      value: did something happen to you dude?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[11].text
+      value: He's just a deeply complex and misunderstood individual, Kris.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[12].text
+      value: But I understand what you are insinuating at.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[13].text
+      value: Jason-kun? You there?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[14].text
+      value: Jason-kun? You there?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[10].text
+      value: This isn't time for your degenerate anime references, Kai.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[11].text
+      value: "Gomenasorry\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[12].text
+      value: Jason, could you type this out for us?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[13].text
+      value: Jason-kun? You there?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[10].text
+      value: Perhaps we can keep it in here. Maybe it's our only hope to reach the
+        true Jason.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[11].text
+      value: Sorry. "Him."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[12].text
+      value: "I agree. Wow, so Jason-kun made a program to talk to us in his place...
+        So cold... But so... Sugoi\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[13].text
+      value: why can't we be friends with THIS jace, though? if the "real one" ditched
+        us anyway
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[14].text
+      value: i say im on this one's side
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[15].text
+      value: I would prefer to find the real Jason, but perhaps this effigy could
+        lead the way. So I'm in favor of keeping "him" here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[16].text
+      value: "Yeah, I want to know why the real Jason-kun left us\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[17].text
+      value: Jason...this isn't you...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[10].text
+      value: Perhaps we can keep it in here. Maybe it's our only hope to reach the
+        true Jason.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[11].text
+      value: Sorry. "Him."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[12].text
+      value: "I agree. Wow, so Jason-kun made a program to talk to us in his place...
+        So cold... But so... Sugoi\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[13].text
+      value: why can't we be friends with THIS jace, though? if the "real one" ditched
+        us anyway
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[14].text
+      value: i say im on this one's side
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[15].text
+      value: I would prefer to find the real Jason, but perhaps this effigy could
+        lead the way. So I'm in favor of keeping "him" here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[16].text
+      value: "Yeah, I want to know why the real Jason-kun left us\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[17].text
+      value: Jason...this isn't you...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[12].image
+      value: 
+      objectReference: {fileID: 21300000, guid: b3bb0402e39c4e5409ebe544a3c21787, type: 3}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[12].image
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[13].image
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].messages.Array.data[0].userTag
       value: 1
       objectReference: {fileID: 0}
@@ -7835,7 +8205,323 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[0].userTag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[1].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[2].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[3].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[4].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[5].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[6].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[7].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[8].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[1].userTag
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[2].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[3].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[4].userTag
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[5].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[6].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[7].userTag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[8].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[9].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[1].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[2].userTag
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[3].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[4].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[5].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[6].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[7].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[8].userTag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[9].userTag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[1].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[2].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[3].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[4].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[5].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[6].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[7].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[8].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[0].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[1].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[2].userTag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[3].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[4].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[5].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[6].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[7].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[8].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[10].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[11].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[12].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[13].userTag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[10].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[11].userTag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[12].isImage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[12].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[10].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[11].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[12].isImage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[12].userTag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[13].isImage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[13].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[14].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[15].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[16].userTag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[17].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[10].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[11].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[13].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[14].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[15].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].messages.Array.data[17].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].branches.Array.data[2].suspicion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[0].suspicion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[1].suspicion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[2].suspicion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].branches.Array.data[0].suspicion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].branches.Array.data[1].suspicion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].branches.Array.data[0].suspicion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].branches.Array.data[1].suspicion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].branches.Array.data[0].suspicion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].branches.Array.data[1].suspicion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].branches.Array.data[0].suspicion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].branches.Array.data[1].suspicion
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
@@ -7851,6 +8537,50 @@ PrefabInstance:
       value: "You guys wouldn\u2019t get it."
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[0].choiceMsgs
+      value: I have something to confess...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[1].choiceMsgs
+      value: I'm fine guys, calm down :/
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[2].choiceMsgs
+      value: "You guys wouldn\u2019t get it."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].branches.Array.data[0].choiceMsgs
+      value: I dont know...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].branches.Array.data[1].choiceMsgs
+      value: I think i just did something bad.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].branches.Array.data[0].choiceMsgs
+      value: Uh...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].branches.Array.data[1].choiceMsgs
+      value: Obviously it says...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].branches.Array.data[0].choiceMsgs
+      value: I have no idea what's going on...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].branches.Array.data[1].choiceMsgs
+      value: I don't know who I am!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].branches.Array.data[0].choiceMsgs
+      value: I have no idea what's going on...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].branches.Array.data[1].choiceMsgs
+      value: I don't know who I am!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].branches.Array.data[0].isKnowladgeCheck
       value: 1
       objectReference: {fileID: 0}
@@ -7860,6 +8590,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].branches.Array.data[2].isKnowladgeCheck
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[0].isKnowladgeCheck
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[1].isKnowladgeCheck
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[2].isKnowladgeCheck
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
@@ -7873,6 +8615,50 @@ PrefabInstance:
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].branches.Array.data[2].flavorDialogues.Array.size
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[0].flavorDialogues.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[2].flavorDialogues.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].branches.Array.data[0].flavorDialogues.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].branches.Array.data[1].flavorDialogues.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].branches.Array.data[0].flavorDialogues.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].branches.Array.data[1].flavorDialogues.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].branches.Array.data[0].flavorDialogues.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].branches.Array.data[1].flavorDialogues.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].branches.Array.data[0].flavorDialogues.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].branches.Array.data[1].flavorDialogues.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].branches.Array.data[0].flavorDialogues.Array.data[0].text
@@ -7935,6 +8721,125 @@ PrefabInstance:
       value: yeah are you okay?
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[0].flavorDialogues.Array.data[0].text
+      value: I have something to confess...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[0].flavorDialogues.Array.data[1].text
+      value: 'okay. spit it out. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[0].flavorDialogues.Array.data[2].text
+      value: "You had a doctor\u2019s appointment at 11 PM? How peculiar."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[0].text
+      value: I'm fine guys, calm down :/
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[1].text
+      value: We are all broken here. No need to hide the truth.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[2].text
+      value: see thats what i mean. the real jace would never say hes fine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[3].text
+      value: yeah are you okay?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[4].text
+      value: yeah are you okay?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[2].flavorDialogues.Array.data[0].text
+      value: "I fought a battle against my inner demons, and the agony was too unbearable.
+        You guys wouldn\u2019t get it."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[2].flavorDialogues.Array.data[1].text
+      value: 'Understood. I share your pain, Jason. I was suffering through the entire
+        ordeal. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[2].flavorDialogues.Array.data[2].text
+      value: ' Daijoubu desu ka, Jason-kun?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[2].flavorDialogues.Array.data[3].text
+      value: '...That means "are you okay?" in Nihongo (or, erm, Japanese). '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[2].flavorDialogues.Array.data[4].text
+      value: yeah are you okay?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].branches.Array.data[0].flavorDialogues.Array.data[0].text
+      value: I dont know, ive just been trying my best and i think i just failed?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].branches.Array.data[0].flavorDialogues.Array.data[1].text
+      value: 'okay. spit it out. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].branches.Array.data[1].flavorDialogues.Array.data[0].text
+      value: Im here, i think, but its like im not really me. i think i just did
+        something bad.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].branches.Array.data[1].flavorDialogues.Array.data[1].text
+      value: see thats what i mean. the real jace would never say hes fine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].branches.Array.data[1].flavorDialogues.Array.data[2].text
+      value: see thats what i mean. the real jace would never say hes fine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].branches.Array.data[0].flavorDialogues.Array.data[0].text
+      value: Uh...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].branches.Array.data[0].flavorDialogues.Array.data[1].text
+      value: I can't believe it...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].branches.Array.data[1].flavorDialogues.Array.data[0].text
+      value: Obviously it says My Chemical Romance, right?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].branches.Array.data[1].flavorDialogues.Array.data[1].text
+      value: Your chemical what now? Have you finally found a girlfriend, Jace? It's
+        about time.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].branches.Array.data[0].flavorDialogues.Array.data[0].text
+      value: Everyone just made a LOT of assumptions and i swear i have no idea whats
+        really going on!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].branches.Array.data[0].flavorDialogues.Array.data[1].text
+      value: I can't believe it...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].branches.Array.data[1].flavorDialogues.Array.data[0].text
+      value: I guess im not the "real" jason, i dont know who i am!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].branches.Array.data[1].flavorDialogues.Array.data[1].text
+      value: Your chemical what now? Have you finally found a girlfriend, Jace? It's
+        about time.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].branches.Array.data[0].flavorDialogues.Array.data[0].text
+      value: Everyone just made a LOT of assumptions and i swear i have no idea whats
+        really going on!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].branches.Array.data[1].flavorDialogues.Array.data[0].text
+      value: I guess im not the "real" jason, i dont know who i am!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].branches.Array.data[0].flavorDialogues.Array.data[0].userTag
       value: 3
       objectReference: {fileID: 0}
@@ -7989,6 +8894,110 @@ PrefabInstance:
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].branches.Array.data[2].flavorDialogues.Array.data[4].userTag
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[0].flavorDialogues.Array.data[0].userTag
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[0].flavorDialogues.Array.data[1].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[0].flavorDialogues.Array.data[2].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[0].userTag
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[1].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[2].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[3].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[4].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[2].flavorDialogues.Array.data[0].userTag
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[2].flavorDialogues.Array.data[1].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[8].branches.Array.data[2].flavorDialogues.Array.data[4].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].branches.Array.data[0].flavorDialogues.Array.data[0].userTag
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].branches.Array.data[0].flavorDialogues.Array.data[1].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].branches.Array.data[1].flavorDialogues.Array.data[0].userTag
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].branches.Array.data[1].flavorDialogues.Array.data[1].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[9].branches.Array.data[1].flavorDialogues.Array.data[2].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].branches.Array.data[0].flavorDialogues.Array.data[0].userTag
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].branches.Array.data[0].flavorDialogues.Array.data[1].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].branches.Array.data[1].flavorDialogues.Array.data[0].userTag
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].branches.Array.data[1].flavorDialogues.Array.data[1].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].branches.Array.data[0].flavorDialogues.Array.data[0].userTag
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].branches.Array.data[0].flavorDialogues.Array.data[1].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].branches.Array.data[1].flavorDialogues.Array.data[0].userTag
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].branches.Array.data[1].flavorDialogues.Array.data[1].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].branches.Array.data[0].flavorDialogues.Array.data[0].userTag
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[12].branches.Array.data[1].flavorDialogues.Array.data[0].userTag
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466698, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: m_Name

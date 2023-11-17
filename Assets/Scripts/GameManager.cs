@@ -32,6 +32,9 @@ public class GameManager : MonoBehaviour
     //knowledge check
     public int suspicionLvl = 0;
 
+    //audio
+    //public AudioClip
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -86,6 +89,13 @@ public class GameManager : MonoBehaviour
 
         inboxTxt.text = "Inbox";
         StartCoroutine(waitAndPrint(sequences[sequenceIndex].messages[dialogueIndex]));
+
+        // start playing music (dont loop)
+        //start playing ambiant sound (loop)
+        AudioManager.instance.ambiant.clip = AudioManager.instance.ambiantSounds;
+        AudioManager.instance.ambiant.Play();
+        //logging on (connected) sound
+
     }
 
     //
@@ -116,6 +126,7 @@ public class GameManager : MonoBehaviour
         //Debug.Log(sequences[sequenceIndex].messages.Count); // shows only once
         yield return new WaitForSeconds(waitTime);
         prevDialogueTextLength = dialogue.text.Length;
+
         //after waiting is done
         if (dialogueIndex != sequences[sequenceIndex].messages.Count-1)
         {
@@ -179,6 +190,7 @@ public class GameManager : MonoBehaviour
             //}
 
             //special event ------------------------------------ sequence specific event
+            //external event sound effect
             if (sequenceIndex == 2)
             {
                 currentPopUpButton = Instantiate(popUpButton, inboxButtonHolder.transform); //create pop up button
@@ -217,21 +229,24 @@ public class GameManager : MonoBehaviour
         if (sequences[sequenceIndex].messages[dialogueIndex].userTag == character.num1Wa1fuLVR) // choosing the names from the public enum
         {
             newestGameObj.GetComponent<TextMeshProUGUI>().text = "<color=#64F08C>num1Wa1fuLVR</color>";
+            
         }
         else if (sequences[sequenceIndex].messages[dialogueIndex].userTag == character.kris)
         {
             newestGameObj.GetComponent<TextMeshProUGUI>().text = "<color=#5DADE2>kris</color>";
+            
         }
         else if (sequences[sequenceIndex].messages[dialogueIndex].userTag == character.d4rknessWay)
         {
             newestGameObj.GetComponent<TextMeshProUGUI>().text = "<color=#D99FE4>d4rknessWay</color>";
+            
         }
         else if (sequences[sequenceIndex].messages[dialogueIndex].userTag == character.json)
         {
             newestGameObj.GetComponent<TextMeshProUGUI>().text = "<color=#C23B3B>.json</color>";
+            
         }
         newestGameObj.GetComponent <TextMeshProUGUI>().text += " said: " + sequences[sequenceIndex].messages[dialogueIndex].text;
-
         // change the  heigth and width of  the text mesh pro obj according to the amount of lines there is
         // currently thinks that theres 1 line which equals to  0
         Debug.Log(newestGameObj.GetComponent<TextMeshProUGUI>().textInfo.lineCount);
@@ -241,8 +256,21 @@ public class GameManager : MonoBehaviour
         newestGameObj.GetComponent<TextMeshProUGUI>().rectTransform.sizeDelta =
             new Vector2(186f, (30 * ((newestGameObj.GetComponent<TextMeshProUGUI>().text.Length/maxChar) + 1)));
 
+        //message sent/received sounds
+
         //scrollBarObj.GetComponent<Scrollbar>().value = 0;
         //newestGameObj.GetComponent<TextMeshProUGUI>().textInfo.lineCount
+
+        //audio
+        if (sequences[sequenceIndex].messages[dialogueIndex].userTag != character.json)
+        {
+            AudioManager.instance.misc.clip = AudioManager.instance.messageReceived;
+        }
+        else
+        {
+            AudioManager.instance.misc.clip = AudioManager.instance.messageSent;
+        }
+        AudioManager.instance.misc.Play();
     }
 
     //public void chooseDialogueOption(TMP_Text txt) //when the player makes (clicks the button) a choice
@@ -340,6 +368,8 @@ public class GameManager : MonoBehaviour
         inboxTxt.text = "Inbox (" + unopenedMessages+ ")";
 
         StartCoroutine(waitAndPrint(sequences[sequenceIndex].messages[dialogueIndex]));
+
+        //start playing audio according to the chat
     }
 
     public void closeSelectedPopUp(GameObject popUp)

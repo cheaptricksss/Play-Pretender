@@ -5,11 +5,16 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+
 public class ChoiceButtonScript : MonoBehaviour
 {
     public TMP_Text txt;
+    
     public void chooseDialogueOption() //when the player makes (clicks the button) a choice
     {
+        // mouse clicking sound
+        AudioManager.instance.mouseClick.Play();
+
         //Debug.Log("Button Has Been Clicked");
         //Debug.Log("TMPtext is: " + txt.text);
         //GameManager.instance.choiceTime = true;

@@ -7779,6 +7779,217 @@ PrefabInstance:
       propertyPath: inboxButtonHolder
       value: 
       objectReference: {fileID: 1505773740}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.data[0].text
+      value: hey jace where were you yesterday? i miss seein you around. and i think
+        ebony does too in her creepy goth way
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.data[1].text
+      value: "Perchance\u2026your company is not entirely unbearable."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.data[2].text
+      value: Oh, is this for that party you guys were planning on a couple days ago?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.data[3].text
+      value: Yes. It was my annual winter solstice ceremony, celebrating the darkness
+        that is yet to come.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.data[4].text
+      value: Jason, you have never missed any of my previous solstice ceremonies.
+        Is something the matter?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.data[0].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.data[1].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.data[2].userTag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.data[3].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.data[4].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[2].suspicion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[0].choiceMsgs
+      value: I had a doctors appointment.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[1].choiceMsgs
+      value: "Didn\u2019t feel like it\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[2].choiceMsgs
+      value: "You guys wouldn\u2019t get it."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[0].isKnowladgeCheck
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[1].isKnowladgeCheck
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[2].isKnowladgeCheck
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[0].flavorDialogues.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[1].flavorDialogues.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[2].flavorDialogues.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[0].flavorDialogues.Array.data[0].text
+      value: I had a doctors appointment.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[0].flavorDialogues.Array.data[1].text
+      value: oh so you just forgot to cancel or... ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[0].flavorDialogues.Array.data[2].text
+      value: "You had a doctor\u2019s appointment at 11 PM? How peculiar."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[0].flavorDialogues.Array.data[3].text
+      value: see you all tomorrow i guess
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[1].flavorDialogues.Array.data[0].text
+      value: "I didn\u2019t feel like it\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[1].flavorDialogues.Array.data[1].text
+      value: "\u201CDidn\u2019t feel like it?\u201D Jason, I have spent MONTHS preparing
+        for the solstice. I had to buy EIGHTY DOLLARS worth of fake blood at Hot
+        Topic. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[1].flavorDialogues.Array.data[2].text
+      value: ' Daijoubu desu ka, Jason-kun?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[1].flavorDialogues.Array.data[3].text
+      value: '...That means "are you okay?" in Nihongo (or, erm, Japanese). '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[1].flavorDialogues.Array.data[4].text
+      value: yeah are you okay?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[2].flavorDialogues.Array.data[0].text
+      value: "I fought a battle against my inner demons, and the agony was too unbearable.
+        You guys wouldn\u2019t get it."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[2].flavorDialogues.Array.data[1].text
+      value: 'Understood. I share your pain, Jason. I was suffering through the entire
+        ordeal. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[2].flavorDialogues.Array.data[2].text
+      value: ' Daijoubu desu ka, Jason-kun?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[2].flavorDialogues.Array.data[3].text
+      value: '...That means "are you okay?" in Nihongo (or, erm, Japanese). '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[2].flavorDialogues.Array.data[4].text
+      value: yeah are you okay?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[0].flavorDialogues.Array.data[0].userTag
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[0].flavorDialogues.Array.data[1].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[0].flavorDialogues.Array.data[2].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[0].flavorDialogues.Array.data[3].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[1].flavorDialogues.Array.data[0].userTag
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[1].flavorDialogues.Array.data[1].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[1].flavorDialogues.Array.data[2].userTag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[1].flavorDialogues.Array.data[3].userTag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[1].flavorDialogues.Array.data[4].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[2].flavorDialogues.Array.data[0].userTag
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[2].flavorDialogues.Array.data[1].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[2].flavorDialogues.Array.data[2].userTag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[2].flavorDialogues.Array.data[3].userTag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].branches.Array.data[2].flavorDialogues.Array.data[4].userTag
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466698, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: m_Name
       value: GameManager

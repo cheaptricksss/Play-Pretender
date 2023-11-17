@@ -9,6 +9,7 @@ public class InboxButton : MonoBehaviour
 
     public void OpenPopUp()
     {
+        AudioManager.instance.mouseClick.Play();
         if (newMail == true)
         {
             //change the text on the inbox tag
@@ -32,6 +33,7 @@ public class InboxButton : MonoBehaviour
     public void ClosePopUp()
     {
         //deactivate the object
+        AudioManager.instance.mouseClick.Play();
         GameManager.instance.closeSelectedPopUp(attachedPopUp);
     }
 }

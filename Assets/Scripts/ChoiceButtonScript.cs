@@ -50,7 +50,26 @@ public class ChoiceButtonScript : MonoBehaviour
         //GameManager.instance.ClearChoiceList(); // call clearchoice  list
         GameManager.instance.choiceTime = true;
         //start the couratine
-        Debug.Log(GameManager.instance.suspicionLvl);
-        GameManager.instance.StartCoroutine(GameManager.instance.waitAndPrint(GameManager.instance.sequences[GameManager.instance.sequenceIndex].messages[0]));
+        Debug.Log("Suspicion Lvl is: "+GameManager.instance.suspicionLvl);
+
+
+        if (GameManager.instance.sequenceIndex == 9 && GameManager.instance.suspicionLvl < 1) // the branch point
+        {
+            GameManager.instance.currentPopUpButton = Instantiate(GameManager.instance.popUpButton, GameManager.instance.inboxButtonHolder.transform); //create pop up button
+            GameManager.instance.currentPopUpButton.GetComponent<InboxButton>().attachedPopUp = Instantiate(GameManager.instance.popUp, GameManager.instance.Canvas.transform);//create pop up
+            GameManager.instance.currentPopUpButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Note from .json";
+            GameManager.instance.currentPopUpButton.GetComponent<RectTransform>().sizeDelta = new Vector2(311.647f, 80);
+            //create the writing inside the pop up
+            GameManager.instance.newestGameObj = Instantiate(GameManager.instance.chatMessageObj, GameManager.instance.currentPopUpButton.GetComponent<InboxButton>().attachedPopUp.GetComponent<PopUp>().contentBox.transform);
+            GameManager.instance.newestGameObj.GetComponent<TextMeshProUGUI>().text = "TO: json\n" +
+                "FROM: json\nHeh... looks like you've done a lot better than all the other ones." +
+                " i knew soon enough my program would capture the real abyss of my heart. its beautiful, in a dark way... " +
+                "nobody could ever understand me. It took a cold, soulless machine to do it instead. but enough talk." +
+                " ill let this version keep running, since it seems safe for now. good work, 'Jason'...";
+        }
+        else  // the branch point
+        {
+            GameManager.instance.StartCoroutine(GameManager.instance.waitAndPrint(GameManager.instance.sequences[GameManager.instance.sequenceIndex].messages[0]));
+        }
     }
 }

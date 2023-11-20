@@ -128,7 +128,7 @@ public class GameManager : MonoBehaviour
         prevDialogueTextLength = dialogue.text.Length;
 
         //after waiting is done
-        if (dialogueIndex != sequences[sequenceIndex].messages.Count-1)
+        if (dialogueIndex != sequences[sequenceIndex].messages.Count-1) //if its not the last message in the Messages list
         {
             //actually creating the text object in the screen
             newestGameObj = Instantiate(chatMessageObj, content.transform);
@@ -167,6 +167,20 @@ public class GameManager : MonoBehaviour
                 newestGameObj = Instantiate(chatMessageObj, content.transform);
                 ScrollElement(); // the refence goes in, the actual obj doesn't
                                  //choiceTime = true;
+
+                if (sequences[sequenceIndex].messages[dialogueIndex].isImage == true)
+                { // should the image be only image or the text aswell?
+
+                    //Debug.Log("In Image If Statetment");
+                    GameObject newImObj = Instantiate(image, content.transform);
+                    newImObj.GetComponent<Image>().sprite = sequences[sequenceIndex].messages[dialogueIndex].image;
+
+                    //newImObj.GetComponent<Image>().rectTransform.sizeDelta = new Vector2(100, 150);
+                    newImObj.GetComponent<Image>().rectTransform.sizeDelta =
+                        new Vector2(imageWidth,
+                        imageWidth * sequences[sequenceIndex].messages[dialogueIndex].image.bounds.size.y / sequences[sequenceIndex].messages[dialogueIndex].image.bounds.size.x);
+
+                }
                 for (int i = 0; i < sequences[sequenceIndex].branches.Count; i++)// choices as buttons
                 {
                     //works
@@ -184,6 +198,7 @@ public class GameManager : MonoBehaviour
                     newestButtonObj = null;
                 }
             }
+
             //else
             //{
             //    StartCoroutine(nextChat());
@@ -205,6 +220,20 @@ public class GameManager : MonoBehaviour
                     "the band ‘Nuclear Love Story’ and shopping at Hot Topic. There was an incident in Acorn " +
                     "Falls High School between you and your friend, Jeff.";
             }
+            if (sequenceIndex == 10)
+            {
+                currentPopUpButton = Instantiate(popUpButton, inboxButtonHolder.transform); //create pop up button
+                currentPopUpButton.GetComponent<InboxButton>().attachedPopUp = Instantiate(popUp, Canvas.transform);//create pop up
+                currentPopUpButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Note from .json";
+                currentPopUpButton.GetComponent<RectTransform>().sizeDelta = new Vector2(311.647f, 80);
+                //create the writing inside the pop up
+                newestGameObj = Instantiate(chatMessageObj, currentPopUpButton.GetComponent<InboxButton>().attachedPopUp.GetComponent<PopUp>().contentBox.transform);
+                newestGameObj.GetComponent<TextMeshProUGUI>().text = "TO: json\n" +
+                    "FROM: json\nWow. you just cant seem to understand the darkness inside me..." +
+                    "I thought I programmed you better. but it seems like youre just some worthless effigy, just as worthless as the real me." +
+                    " I thought youd be better but guess not. i can make you better so say goodbye to everything you know." +
+                    " youll be less of a disappointment this time.";
+            }
 
             sequenceIndex++;
             dialogueIndex = 0;
@@ -214,12 +243,12 @@ public class GameManager : MonoBehaviour
                 StartCoroutine(nextChat());
             }
         }
-        //else // the end of the game, no more dialogues left
-        //{
+        else // the end of the game, no more dialogues left
+        {
 
-        //}
-        //}// while true's  squigly line
-    }
+        }
+    
+}
 
 
     //public GameObject scrollBarObj;
@@ -252,7 +281,7 @@ public class GameManager : MonoBehaviour
         Debug.Log(newestGameObj.GetComponent<TextMeshProUGUI>().textInfo.lineCount);
         //newestGameObj.GetComponent<TextMeshProUGUI>().rectTransform.sizeDelta =
         //    new Vector2(186f, (57.262f* newestGameObj.GetComponent<TextMeshProUGUI>().textInfo.lineCount));
-        int maxChar = 33;
+        int maxChar = 23;
         newestGameObj.GetComponent<TextMeshProUGUI>().rectTransform.sizeDelta =
             new Vector2(186f, (30 * ((newestGameObj.GetComponent<TextMeshProUGUI>().text.Length/maxChar) + 1)));
 
@@ -332,7 +361,7 @@ public class GameManager : MonoBehaviour
     public GameObject popUp;
     public GameObject Canvas;
     public GameObject inboxButtonHolder;
-    private GameObject currentPopUpButton;
+    public GameObject currentPopUpButton;
     private int chatNumInboxTxt = 0;
     //new chat couratine
     public IEnumerator nextChat()
@@ -350,6 +379,17 @@ public class GameManager : MonoBehaviour
         chatNumInboxTxt++;
         currentPopUpButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Chat " + chatNumInboxTxt;
         currentPopUpButton.GetComponent<RectTransform>().sizeDelta = new Vector2(311.647f, 80);
+        //start the music
+        if (chatNumInboxTxt == 1)
+        {
+            AudioManager.instance.music.clip = AudioManager.instance.musicChat2;
+        }
+        else
+        {
+            AudioManager.instance.music.clip = AudioManager.instance.musicChat3;
+        }
+        AudioManager.instance.music.Play();
+
         //delete all contents
         if (content.transform.childCount > 0)
         {

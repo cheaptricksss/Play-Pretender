@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571334, b: 0.3069219, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.52821296, g: 0.4298683, b: 0.5660378, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -352,30 +352,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: choicePrefab (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 6822611020918862597, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: c4ba8a8b24a45994a9a6957b8a67ba32, type: 2}
-    - target: {fileID: 6822611020918862597, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6822611020918862597, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6822611020918862597, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6822611020918862597, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -8824296696019273203, guid: c4ba8a8b24a45994a9a6957b8a67ba32, type: 2}
-    - target: {fileID: 6822611020918862597, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
 --- !u!224 &74179284 stripped
@@ -444,7 +420,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.16037738, g: 0.14171712, b: 0.14171712, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -5831,7 +5807,7 @@ MonoBehaviour:
     shopping at Hot Topic. There was an incident in Acorn Falls High School between
     you and your friend, Jeff."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c4ba8a8b24a45994a9a6957b8a67ba32, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5895,7 +5871,7 @@ MonoBehaviour:
   m_margin: {x: 89.37097, y: 143.98648, z: 47.16797, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &426395598
@@ -6028,7 +6004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 0.37755862, g: 0.29374334, b: 0.38679248, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6384,7 +6360,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 318}
+  m_AnchoredPosition: {x: -34, y: 318}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &684472657
@@ -6409,8 +6385,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Inbox (1)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c4ba8a8b24a45994a9a6957b8a67ba32, type: 2}
-  m_sharedMaterial: {fileID: -8824296696019273203, guid: c4ba8a8b24a45994a9a6957b8a67ba32, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6434,14 +6410,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -6814,8 +6790,8 @@ MonoBehaviour:
   misc: {fileID: 646846489}
   mouseClick: {fileID: 1312127499}
   musicChat1: {fileID: 0}
-  musicChat2: {fileID: 8300000, guid: c329ebd4fc8734ab392610191d2df84e, type: 3}
-  musicChat3: {fileID: 8300000, guid: e151eb31f95a24793887b1319f6e0a71, type: 3}
+  musicChat2: {fileID: 8300000, guid: d5156db81cf4c4d359d6b23b74cddc5a, type: 3}
+  musicChat3: {fileID: 8300000, guid: 0f041e8d4cd6241fa85ac0eb306ce54c, type: 3}
   ambiantSounds: {fileID: 8300000, guid: bd84eaa1421a3f54dbde5bc46bfb51eb, type: 3}
   messageReceived: {fileID: 8300000, guid: 3f31d8d93ad9646469ec7d2e407e2c65, type: 3}
   messageSent: {fileID: 8300000, guid: 6b66922eb57ea3243b30b470ccb1e551, type: 3}
@@ -7224,7 +7200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.71659136, g: 0.64705884, b: 0.77254903, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7550,10 +7526,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d840e1ffd2adb74fb6c13aab2071a71, type: 3}
       propertyPath: m_Name
       value: playpretender
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 8d840e1ffd2adb74fb6c13aab2071a71, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1232789409818558835, guid: 8d840e1ffd2adb74fb6c13aab2071a71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8203,33 +8175,9 @@ PrefabInstance:
       value: hello
       objectReference: {fileID: 0}
     - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
-      propertyPath: m_fontSize
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
-      propertyPath: m_margin.z
-      value: -232.87009
-      objectReference: {fileID: 0}
-    - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: c4ba8a8b24a45994a9a6957b8a67ba32, type: 2}
-    - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -8824296696019273203, guid: c4ba8a8b24a45994a9a6957b8a67ba32, type: 2}
-    - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4279111182
-      objectReference: {fileID: 0}
-    - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: -6378852810501808587, guid: 58157ebf03df441bcb2beb0bef116111, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
 --- !u!1001 &2143486426
@@ -8328,33 +8276,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
-      propertyPath: m_fontSize
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
-      propertyPath: m_margin.z
-      value: -267.06122
-      objectReference: {fileID: 0}
-    - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: c4ba8a8b24a45994a9a6957b8a67ba32, type: 2}
-    - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -8824296696019273203, guid: c4ba8a8b24a45994a9a6957b8a67ba32, type: 2}
-    - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4279111182
-      objectReference: {fileID: 0}
-    - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: -6378852810501808587, guid: 58157ebf03df441bcb2beb0bef116111, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
 --- !u!1001 &1270432733827497511
@@ -8438,23 +8362,23 @@ PrefabInstance:
       objectReference: {fileID: 1505773740}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.size
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].branches.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].messages.Array.size
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].messages.Array.size
-      value: 9
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].branches.Array.size
@@ -8462,7 +8386,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.size
-      value: 14
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].branches.Array.size
@@ -8470,7 +8394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.size
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].branches.Array.size
@@ -8478,28 +8402,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.size
-      value: 18
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[12].branches.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[12].messages.Array.size
-      value: 3
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[13].messages.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].messages.Array.data[0].text
-      value: hey jace where were you yesterday? i miss seein you around. and i think
-        ebony does too in her creepy goth way
+      value: Hmph. *disappears into the omnipresent veil of darkness*
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].messages.Array.data[1].text
-      value: "Perchance\u2026your company is not entirely unbearable."
+      value: 0_0 well my change of topic attempt was a complete fail
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].messages.Array.data[2].text
-      value: Oh, is this for that party you guys were planning on a couple days ago?
+      value: see you all tomorrow i guess
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].messages.Array.data[3].text
@@ -8513,23 +8440,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].messages.Array.data[0].text
-      value: Jason-kun, you have been acting quite odd lately.
+      value: hey jace where were you yesterday? i miss seein you around. and i think
+        ebony does too in her creepy goth way
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].messages.Array.data[1].text
-      value: "Has Jason become a prep? Disgusting\u2026"
+      value: "Perchance\u2026your company is not entirely unbearable."
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].messages.Array.data[2].text
-      value: i guess its been easy to tell but ive been REALLY worried about you
+      value: Oh, is this for that party you guys were planning on a couple days ago?
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].messages.Array.data[3].text
-      value: "My vampire intuition senses something off here\u2026hm."
+      value: Yes. It was my annual winter solstice ceremony, celebrating the darkness
+        that is yet to come.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].messages.Array.data[4].text
-      value: jace... is there something you haven't told us?
+      value: Jason, you have never missed any of my previous solstice ceremonies.
+        Is something the matter?
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].messages.Array.data[5].text
@@ -8551,42 +8481,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[0].text
-      value: Jason-kun, we are your tomodachis. You can tell us anything. Gambare
-        gambare.
+      value: Jason-kun, you have been acting quite odd lately.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[1].text
-      value: "Well, i just havent been feeling like\u2026 myself lately?"
+      value: "Has Jason become a prep? Disgusting\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[2].text
-      value: be more specific dude
+      value: i guess its been easy to tell but ive been REALLY worried about you
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[3].text
-      value: Tell us, Jason. Unleash your inner demons into the calamity of the night.
+      value: "My vampire intuition senses something off here\u2026hm."
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[4].text
-      value: "Like, i just don't even know who i really am\u2026"
+      value: jace... is there something you haven't told us?
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[5].text
-      value: i asked you to be more specific?
+      value: ever since the thing with jeff, and school ending... i dont wanna sound
+        too much like ebony here but its kinda like you died?
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[6].text
-      value: "I was correct. Jason is undergoing a transformation of sorts\u2026"
+      value: "\u2026And not in a good way."
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[7].text
-      value: He's going into his villain arc. Heh. I know all too well what that's
-        like.
+      value: its been months and i havent seen you ONCE
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[8].text
-      value: It's alright, Jace. Embrace the darkness. We will embark into the shadows
-        of eternity hand in hand.
+      value: and i know youve never been exactly the most social person but i would
+        describe the way youve been acting lately as actually chaotic
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[9].text
@@ -8596,100 +8525,102 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[0].text
-      value: Nani? What do you mean by that?
+      value: Jason-kun, we are your tomodachis. You can tell us anything. Gambare
+        gambare.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[1].text
-      value: yeah, what did you "do" exactly ??
+      value: "Well, i just havent been feeling like\u2026 myself lately?"
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[2].text
+      value: be more specific dude
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[3].text
+      value: Tell us, Jason. Unleash your inner demons into the calamity of the night.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[4].text
+      value: "Like, i just don't even know who i really am\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[5].text
+      value: i asked you to be more specific?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[6].text
+      value: "I was correct. Jason is undergoing a transformation of sorts\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[7].text
+      value: He's going into his villain arc. Heh. I know all too well what that's
+        like.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[8].text
+      value: It's alright, Jace. Embrace the darkness. We will embark into the shadows
+        of eternity hand in hand.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[9].text
+      value: hold on. i think he might mean something less stupid/edgy than that.
+        you guys have noticed how jace has been acting weird ever since school ended,
+        right? it keeps getting better, getting worse, getting better, over and over.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[0].text
+      value: Nani? What do you mean by that?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[1].text
+      value: yeah, what did you "do" exactly ??
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[11].messages.Array.data[2].text
       value: "I got a message from myself just now and it says that i'm a program?
         and that apparently i haven't been doing a good job\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[10].messages.Array.data[3].text
+      propertyPath: sequences.Array.data[11].messages.Array.data[3].text
       value: a good job of what?! what the hell do you mean by "program"?! ebony
         this isn't another weird emo thing right?
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[10].messages.Array.data[4].text
+      propertyPath: sequences.Array.data[11].messages.Array.data[4].text
       value: That's really deep, Jace. I didn't know you were so profound and poetic.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[10].messages.Array.data[5].text
+      propertyPath: sequences.Array.data[11].messages.Array.data[5].text
       value: WAIT IM SO LOST IS THIS JUST NORMAL TO YOU GUYS
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[10].messages.Array.data[6].text
+      propertyPath: sequences.Array.data[11].messages.Array.data[6].text
       value: But yes. This seems too "emo," even for Jace...
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[10].messages.Array.data[7].text
+      propertyPath: sequences.Array.data[11].messages.Array.data[7].text
       value: "\u25D1\uFE4F\u25D0"
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[10].messages.Array.data[8].text
+      propertyPath: sequences.Array.data[11].messages.Array.data[8].text
       value: Omg. This is just like Knife Performance Online.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[10].messages.Array.data[9].text
+      propertyPath: sequences.Array.data[11].messages.Array.data[9].text
       value: Wait so, we've been talking to a bot this entire time?
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[11].messages.Array.data[0].text
+      propertyPath: sequences.Array.data[12].messages.Array.data[0].text
       value: LOL omg it actually doesn't know.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[11].messages.Array.data[1].text
+      propertyPath: sequences.Array.data[12].messages.Array.data[1].text
       value: hey! don't say IT
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[11].messages.Array.data[2].text
-      value: That's what it is, isn't it? A mere object.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[11].messages.Array.data[3].text
-      value: he definitely has a mind of his own
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[11].messages.Array.data[4].text
-      value: "So what now\u2026"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[11].messages.Array.data[5].text
-      value: We just accept it?
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[11].messages.Array.data[6].text
-      value: wait, jace, you werent a robot the whole time, right? like at school
-        and everything??
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[11].messages.Array.data[7].text
-      value: i mean if you were that's kinda cool?
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[11].messages.Array.data[8].text
-      value: He was too warm-blooded to be a robot.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[11].messages.Array.data[9].text
-      value: '*raises glasses* If he got a message from himself, then whoever sent
-        it must be the real Jason-kun.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[12].messages.Array.data[0].text
-      value: Do you want me to send a reply? maybe it's the "real" one and he can
-        give us some answers?
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[12].messages.Array.data[1].text
-      value: I would like that.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[12].messages.Array.data[2].text
-      value: Yeah, let's do that.
+      value: That's what it is, isn't it? A mere object.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[12].messages.Array.data[3].text
@@ -8722,6 +8653,23 @@ PrefabInstance:
         it must be the real Jason-kun.'
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[13].messages.Array.data[0].text
+      value: Do you want me to send a reply? maybe it's the "real" one and he can
+        give us some answers?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[13].messages.Array.data[1].text
+      value: I would like that.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[13].messages.Array.data[2].text
+      value: Yeah, let's do that.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[13].messages.Array.data[3].text
+      value: Yeah, let's do that.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[10].text
       value: did something happen to you dude?
       objectReference: {fileID: 0}
@@ -8743,15 +8691,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[10].text
-      value: This isn't time for your degenerate anime references, Kai.
+      value: did something happen to you dude?
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[11].text
-      value: "Gomenasorry\u2026"
+      value: He's just a deeply complex and misunderstood individual, Kris.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[12].text
-      value: Jason, could you type this out for us?
+      value: But I understand what you are insinuating at.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[13].text
@@ -8759,17 +8707,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[10].text
-      value: Perhaps we can keep it in here. Maybe it's our only hope to reach the
-        true Jason.
+      value: This isn't time for your degenerate anime references, Kai.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[11].text
-      value: Sorry. "Him."
+      value: "Gomenasorry\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[12].text
-      value: "I agree. Wow, so Jason-kun made a program to talk to us in his place...
-        So cold... But so... Sugoi\u2026"
+      value: Jason, could you type this out for us?
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[13].text
@@ -8832,26 +8778,26 @@ PrefabInstance:
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[12].image
       value: 
-      objectReference: {fileID: 21300000, guid: b3bb0402e39c4e5409ebe544a3c21787, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[12].image
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: b3bb0402e39c4e5409ebe544a3c21787, type: 3}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[13].image
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].messages.Array.data[0].userTag
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[7].messages.Array.data[1].userTag
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.data[1].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].messages.Array.data[2].userTag
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].messages.Array.data[3].userTag
@@ -8863,7 +8809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].messages.Array.data[0].userTag
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].messages.Array.data[1].userTag
@@ -8871,7 +8817,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].messages.Array.data[2].userTag
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].messages.Array.data[3].userTag
@@ -8879,7 +8825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].messages.Array.data[4].userTag
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].messages.Array.data[5].userTag
@@ -8899,7 +8845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[1].userTag
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[2].userTag
@@ -8911,7 +8857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[4].userTag
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[5].userTag
@@ -8923,11 +8869,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[7].userTag
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[8].userTag
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[9].userTag
@@ -8935,19 +8881,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[1].userTag
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[10].messages.Array.data[2].userTag
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[10].messages.Array.data[3].userTag
+      propertyPath: sequences.Array.data[10].messages.Array.data[2].userTag
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
-      propertyPath: sequences.Array.data[10].messages.Array.data[4].userTag
+      propertyPath: sequences.Array.data[10].messages.Array.data[3].userTag
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[4].userTag
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[5].userTag
@@ -8959,15 +8905,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[7].userTag
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[8].userTag
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[9].userTag
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[1].userTag
@@ -8975,7 +8921,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[2].userTag
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[3].userTag
@@ -8987,11 +8933,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[5].userTag
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[6].userTag
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[7].userTag
@@ -8999,19 +8945,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[8].userTag
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[12].messages.Array.data[0].userTag
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[12].messages.Array.data[1].userTag
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[12].messages.Array.data[2].userTag
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[12].messages.Array.data[3].userTag
@@ -9038,6 +8984,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[13].messages.Array.data[0].userTag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[13].messages.Array.data[1].userTag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[10].userTag
       value: 1
       objectReference: {fileID: 0}
@@ -9055,15 +9009,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[10].userTag
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[11].userTag
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[12].isImage
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[12].userTag
@@ -9075,15 +9029,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[11].userTag
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[12].isImage
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[12].userTag
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[13].isImage
@@ -9139,11 +9093,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[0].suspicion
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[1].suspicion
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[2].suspicion
@@ -9195,11 +9149,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[0].choiceMsgs
-      value: I have something to confess...
+      value: I had a doctors appointment.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[1].choiceMsgs
-      value: I'm fine guys, calm down :/
+      value: "Didn\u2019t feel like it\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[2].choiceMsgs
@@ -9207,27 +9161,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].branches.Array.data[0].choiceMsgs
-      value: I dont know...
+      value: I have something to confess...
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].branches.Array.data[1].choiceMsgs
-      value: I think i just did something bad.
+      value: I'm fine guys, calm down :/
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].branches.Array.data[0].choiceMsgs
-      value: Uh...
+      value: I dont know...
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].branches.Array.data[1].choiceMsgs
-      value: Obviously it says...
+      value: I think i just did something bad.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].branches.Array.data[0].choiceMsgs
-      value: I have no idea what's going on...
+      value: Uh...
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].branches.Array.data[1].choiceMsgs
-      value: I don't know who I am!
+      value: Obviously it says...
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[12].branches.Array.data[0].choiceMsgs
@@ -9251,14 +9205,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[0].isKnowladgeCheck
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[1].isKnowladgeCheck
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[2].isKnowladgeCheck
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[6].branches.Array.data[0].flavorDialogues.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[6].branches.Array.data[1].flavorDialogues.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
@@ -9275,11 +9237,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[0].flavorDialogues.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[2].flavorDialogues.Array.size
@@ -9287,27 +9249,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].branches.Array.data[0].flavorDialogues.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].branches.Array.data[1].flavorDialogues.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].branches.Array.data[0].flavorDialogues.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].branches.Array.data[1].flavorDialogues.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].branches.Array.data[0].flavorDialogues.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].branches.Array.data[1].flavorDialogues.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[12].branches.Array.data[0].flavorDialogues.Array.size
@@ -9379,11 +9341,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[0].flavorDialogues.Array.data[0].text
-      value: I have something to confess...
+      value: I had a doctors appointment.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[0].flavorDialogues.Array.data[1].text
-      value: 'okay. spit it out. '
+      value: oh so you just forgot to cancel or... ?
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[0].flavorDialogues.Array.data[2].text
@@ -9391,19 +9353,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[0].text
-      value: I'm fine guys, calm down :/
+      value: "I didn\u2019t feel like it\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[1].text
-      value: We are all broken here. No need to hide the truth.
+      value: "\u201CDidn\u2019t feel like it?\u201D Jason, I have spent MONTHS preparing
+        for the solstice. I had to buy EIGHTY DOLLARS worth of fake blood at Hot
+        Topic. "
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[2].text
-      value: see thats what i mean. the real jace would never say hes fine
+      value: ' Daijoubu desu ka, Jason-kun?'
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[3].text
-      value: yeah are you okay?
+      value: '...That means "are you okay?" in Nihongo (or, erm, Japanese). '
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[4].text
@@ -9433,7 +9397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].branches.Array.data[0].flavorDialogues.Array.data[0].text
-      value: I dont know, ive just been trying my best and i think i just failed?
+      value: I have something to confess...
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].branches.Array.data[0].flavorDialogues.Array.data[1].text
@@ -9441,12 +9405,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].branches.Array.data[1].flavorDialogues.Array.data[0].text
-      value: Im here, i think, but its like im not really me. i think i just did
-        something bad.
+      value: I'm fine guys, calm down :/
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].branches.Array.data[1].flavorDialogues.Array.data[1].text
-      value: see thats what i mean. the real jace would never say hes fine
+      value: We are all broken here. No need to hide the truth.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].branches.Array.data[1].flavorDialogues.Array.data[2].text
@@ -9454,7 +9417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].branches.Array.data[0].flavorDialogues.Array.data[0].text
-      value: Uh...
+      value: I dont know, ive just been trying my best and i think i just failed?
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].branches.Array.data[0].flavorDialogues.Array.data[1].text
@@ -9462,7 +9425,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].branches.Array.data[1].flavorDialogues.Array.data[0].text
-      value: Obviously it says My Chemical Romance, right?
+      value: Im here, i think, but its like im not really me. i think i just did
+        something bad.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].branches.Array.data[1].flavorDialogues.Array.data[1].text
@@ -9471,8 +9435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].branches.Array.data[0].flavorDialogues.Array.data[0].text
-      value: Everyone just made a LOT of assumptions and i swear i have no idea whats
-        really going on!
+      value: Uh...
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].branches.Array.data[0].flavorDialogues.Array.data[1].text
@@ -9480,7 +9443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].branches.Array.data[1].flavorDialogues.Array.data[0].text
-      value: I guess im not the "real" jason, i dont know who i am!
+      value: Obviously it says My Chemical Romance, right?
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].branches.Array.data[1].flavorDialogues.Array.data[1].text
@@ -9574,11 +9537,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[2].userTag
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[3].userTag
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[4].userTag
@@ -9610,7 +9573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].branches.Array.data[1].flavorDialogues.Array.data[1].userTag
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].branches.Array.data[1].flavorDialogues.Array.data[2].userTag
@@ -9888,23 +9851,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
       propertyPath: m_fontSize
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
-      propertyPath: m_margin.w
-      value: 3.831981
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
       propertyPath: m_margin.z
-      value: -254.845
-      objectReference: {fileID: 0}
-    - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: c4ba8a8b24a45994a9a6957b8a67ba32, type: 2}
-    - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 18
+      value: -211.31657
       objectReference: {fileID: 0}
     - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
       propertyPath: m_overflowMode
@@ -9921,7 +9872,7 @@ PrefabInstance:
     - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -8824296696019273203, guid: c4ba8a8b24a45994a9a6957b8a67ba32, type: 2}
+      objectReference: {fileID: -6378852810501808587, guid: 58157ebf03df441bcb2beb0bef116111, type: 2}
     - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
       propertyPath: m_verticalMapping
       value: 0
@@ -9932,7 +9883,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4279111182
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
       propertyPath: m_VerticalAlignment
@@ -9941,10 +9892,6 @@ PrefabInstance:
     - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
       propertyPath: m_enableWordWrapping
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
       propertyPath: m_IsTextObjectScaleStatic
@@ -9963,45 +9910,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1505773741}
     m_Modifications:
-    - target: {fileID: 3729782072807732894, guid: 98fc27f507c6d44fab54743616b960d0, type: 3}
-      propertyPath: m_fontSize
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 3729782072807732894, guid: 98fc27f507c6d44fab54743616b960d0, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: c4ba8a8b24a45994a9a6957b8a67ba32, type: 2}
-    - target: {fileID: 3729782072807732894, guid: 98fc27f507c6d44fab54743616b960d0, type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3729782072807732894, guid: 98fc27f507c6d44fab54743616b960d0, type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3729782072807732894, guid: 98fc27f507c6d44fab54743616b960d0, type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3729782072807732894, guid: 98fc27f507c6d44fab54743616b960d0, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 3729782072807732894, guid: 98fc27f507c6d44fab54743616b960d0, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -8824296696019273203, guid: c4ba8a8b24a45994a9a6957b8a67ba32, type: 2}
-    - target: {fileID: 3729782072807732894, guid: 98fc27f507c6d44fab54743616b960d0, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 3729782073076106372, guid: 98fc27f507c6d44fab54743616b960d0, type: 3}
       propertyPath: m_Name
       value: popUpButton
       objectReference: {fileID: 0}
     - target: {fileID: 3729782073076106372, guid: 98fc27f507c6d44fab54743616b960d0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3729782073076106373, guid: 98fc27f507c6d44fab54743616b960d0, type: 3}
       propertyPath: m_Pivot.x
@@ -10069,11 +9984,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3729782073076106373, guid: 98fc27f507c6d44fab54743616b960d0, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 154.71
       objectReference: {fileID: 0}
     - target: {fileID: 3729782073076106373, guid: 98fc27f507c6d44fab54743616b960d0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -39.65
       objectReference: {fileID: 0}
     - target: {fileID: 3729782073076106373, guid: 98fc27f507c6d44fab54743616b960d0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10106,28 +10021,16 @@ PrefabInstance:
       value: 0.003921569
       objectReference: {fileID: 0}
     - target: {fileID: 6822611019391830240, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
-      propertyPath: m_Colors.m_PressedColor.b
-      value: 0.77254903
-      objectReference: {fileID: 0}
-    - target: {fileID: 6822611019391830240, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
-      propertyPath: m_Colors.m_PressedColor.g
-      value: 0.64705884
-      objectReference: {fileID: 0}
-    - target: {fileID: 6822611019391830240, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
-      propertyPath: m_Colors.m_PressedColor.r
-      value: 0.7176471
-      objectReference: {fileID: 0}
-    - target: {fileID: 6822611019391830240, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.b
-      value: 0.8207547
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6822611019391830240, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.g
-      value: 0.6788002
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6822611019391830240, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.r
-      value: 0.7820399
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6822611019391830241, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
       propertyPath: m_Pivot.x
@@ -10225,26 +10128,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 521ef4e6e07054b26baa006add5f6768, type: 3}
-    - target: {fileID: 6822611020918862597, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: c4ba8a8b24a45994a9a6957b8a67ba32, type: 2}
-    - target: {fileID: 6822611020918862597, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6822611020918862597, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6822611020918862597, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6822611020918862597, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -8824296696019273203, guid: c4ba8a8b24a45994a9a6957b8a67ba32, type: 2}
     - target: {fileID: 6822611020918862597, guid: c6006cfe2ef7f4525842bf5da7ae1605, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294967295

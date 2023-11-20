@@ -100,10 +100,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.5176471, g: 0.43921572, b: 0.5568628, a: 1}
-    m_HighlightedColor: {r: 0.35882533, g: 0.21462265, b: 0.5, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.20392157, g: 0.08627451, b: 0.35686275, a: 1}
+    m_PressedColor: {r: 0.78039217, g: 0.6784314, b: 0.81960785, a: 1}
+    m_SelectedColor: {r: 0.78039217, g: 0.6784314, b: 0.81960785, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 012a227960b454bcd93f4cd6c29c2bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txt: {fileID: 6822611020918862597}
+  txt: {fileID: 0}
 --- !u!1 &6822611020918862599
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,8 +216,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: djfhsjkfksdfjkjkhfjkjkfhjksdhfjkhdskjfhksjdhfkjdshfkjhsdkjhfskdj
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c4ba8a8b24a45994a9a6957b8a67ba32, type: 2}
+  m_sharedMaterial: {fileID: -8824296696019273203, guid: c4ba8a8b24a45994a9a6957b8a67ba32, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -241,8 +241,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

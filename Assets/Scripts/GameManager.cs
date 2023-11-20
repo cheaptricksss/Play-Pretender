@@ -84,11 +84,13 @@ public class GameManager : MonoBehaviour
                 new Vector2(imageWidth,
                 imageWidth * sequences[sequenceIndex].messages[dialogueIndex].image.bounds.size.y/ sequences[sequenceIndex].messages[dialogueIndex].image.bounds.size.x);
         }
-        prevDialogueTextLength = sequences[sequenceIndex].messages[dialogueIndex].text.Length;
+        prevDialogueTextLength = 2;
         dialogueIndex++;
 
         inboxTxt.text = "Inbox";
         StartCoroutine(waitAndPrint(sequences[sequenceIndex].messages[dialogueIndex]));
+        charBuffer = 50;
+        timeProduct = 25;
 
         // start playing music (dont loop)
         //start playing ambiant sound (loop)
@@ -112,7 +114,7 @@ public class GameManager : MonoBehaviour
     //ienumerator, waitAndPrint variables
     private int charPerSec = 5;
     public float timeProduct = 1;
-    private float charBuffer = 50;
+    private float charBuffer = 0;
     public GameObject newestGameObj;
     private GameObject newestButtonObj;
     public GameObject jsonsNote;
@@ -257,17 +259,17 @@ public class GameManager : MonoBehaviour
         // maybe have a separate list of object kept in the game manager about the sent texts
         if (sequences[sequenceIndex].messages[dialogueIndex].userTag == character.num1Wa1fuLVR) // choosing the names from the public enum
         {
-            newestGameObj.GetComponent<TextMeshProUGUI>().text = "<color=#64F08C>num1Wa1fuLVR</color>";
+            newestGameObj.GetComponent<TextMeshProUGUI>().text = "<color=#5C9B6E>num1Wa1fuLVR</color>";
             
         }
         else if (sequences[sequenceIndex].messages[dialogueIndex].userTag == character.kris)
         {
-            newestGameObj.GetComponent<TextMeshProUGUI>().text = "<color=#5DADE2>kris</color>";
+            newestGameObj.GetComponent<TextMeshProUGUI>().text = "<color=#4E7D9C>kris</color>";
             
         }
         else if (sequences[sequenceIndex].messages[dialogueIndex].userTag == character.d4rknessWay)
         {
-            newestGameObj.GetComponent<TextMeshProUGUI>().text = "<color=#D99FE4>d4rknessWay</color>";
+            newestGameObj.GetComponent<TextMeshProUGUI>().text = "<color=#875590>d4rknessWay</color>";
             
         }
         else if (sequences[sequenceIndex].messages[dialogueIndex].userTag == character.json)
@@ -281,7 +283,7 @@ public class GameManager : MonoBehaviour
         Debug.Log(newestGameObj.GetComponent<TextMeshProUGUI>().textInfo.lineCount);
         //newestGameObj.GetComponent<TextMeshProUGUI>().rectTransform.sizeDelta =
         //    new Vector2(186f, (57.262f* newestGameObj.GetComponent<TextMeshProUGUI>().textInfo.lineCount));
-        int maxChar = 23;
+        int maxChar = 20;
         newestGameObj.GetComponent<TextMeshProUGUI>().rectTransform.sizeDelta =
             new Vector2(186f, (30 * ((newestGameObj.GetComponent<TextMeshProUGUI>().text.Length/maxChar) + 1)));
 

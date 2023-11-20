@@ -8581,7 +8581,7 @@ PrefabInstance:
       objectReference: {fileID: 2011390640}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: timeProduct
-      value: 2
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: choiceBoxContent
@@ -9875,6 +9875,18 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: -17
       objectReference: {fileID: 0}
+    - target: {fileID: 1370205453152980732, guid: 22e8f836afbf5495b8b9ebdc570edb8a, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370205453152980732, guid: 22e8f836afbf5495b8b9ebdc570edb8a, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370205453152980732, guid: 22e8f836afbf5495b8b9ebdc570edb8a, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4155327588617946895, guid: 22e8f836afbf5495b8b9ebdc570edb8a, type: 3}
       propertyPath: m_SizeDelta.y
       value: 2
@@ -10078,15 +10090,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
       propertyPath: m_text
-      value: blah blah blah blah blah shshshs shshs hsbsh shshsh shshs
+      value: ''''''''''''' it''s been a minute'
       objectReference: {fileID: 0}
     - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
       propertyPath: m_fontSize
-      value: 24
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
       propertyPath: m_margin.z
       value: -211.31657
+      objectReference: {fileID: 0}
+    - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
       propertyPath: m_overflowMode

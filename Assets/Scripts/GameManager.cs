@@ -187,7 +187,7 @@ public class GameManager : MonoBehaviour
                     newestButtonObj = Instantiate(choiceBox, choiceBoxContent.transform); // create and put in parent obj
                                                                                           //works
                     newestButtonObj.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = sequences[sequenceIndex].branches[i].choiceMsgs;
-                    newestButtonObj.GetComponent<RectTransform>().sizeDelta = new Vector2(450, 50);
+                    newestButtonObj.GetComponent<RectTransform>().sizeDelta = new Vector2(400, 45);
                     //change the properties of the button manually
                     //newestButtonObj.GetComponent<TextMeshProUGUI>().rectTransform.sizeDelta = new Vector2(450, 30);
 

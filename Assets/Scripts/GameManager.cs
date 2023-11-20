@@ -221,6 +221,10 @@ public class GameManager : MonoBehaviour
                     " You are Jason Lastname. You are an 18 year old in Acorn Falls. You are interested in " +
                     "the band ‘Nuclear Love Story’ and shopping at Hot Topic. There was an incident in Acorn " +
                     "Falls High School between you and your friend, Jeff.";
+                int maxChar = 20;
+                newestGameObj.GetComponent<TextMeshProUGUI>().rectTransform.sizeDelta =
+                    new Vector2(186f, (30 * ((newestGameObj.GetComponent<TextMeshProUGUI>().text.Length / maxChar) + 1)));
+
             }
             if (sequenceIndex == 10)
             {
@@ -235,6 +239,10 @@ public class GameManager : MonoBehaviour
                     "I thought I programmed you better. but it seems like youre just some worthless effigy, just as worthless as the real me." +
                     " I thought youd be better but guess not. i can make you better so say goodbye to everything you know." +
                     " youll be less of a disappointment this time.";
+                int maxChar = 20;
+                newestGameObj.GetComponent<TextMeshProUGUI>().rectTransform.sizeDelta =
+                    new Vector2(186f, (30 * ((newestGameObj.GetComponent<TextMeshProUGUI>().text.Length / maxChar) + 1)));
+
             }
 
             sequenceIndex++;

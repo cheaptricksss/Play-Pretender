@@ -442,8 +442,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1377304279}
   m_HandleRect: {fileID: 1377304278}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: -0.00000036805702
+  m_Size: 0.6402347
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7950,6 +7950,8 @@ RectTransform:
   - {fileID: 2034102286}
   - {fileID: 222834507}
   - {fileID: 1564875771}
+  - {fileID: 2083692006}
+  - {fileID: 1891534890}
   m_Father: {fileID: 248551169}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8224,6 +8226,163 @@ RectTransform:
   m_AnchoredPosition: {x: 1.565, y: 0}
   m_SizeDelta: {x: 96.87, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1891534889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1891534890}
+  - component: {fileID: 1891534893}
+  - component: {fileID: 1891534892}
+  - component: {fileID: 1891534891}
+  m_Layer: 5
+  m_Name: txtMessagePrefab(Clone) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1891534890
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891534889}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1703658329}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 186, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1891534891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891534889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: 40
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
+--- !u!114 &1891534892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891534889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "<color=#5C9B6E>num1Wa1fuLVR</color> said:  Lol. How have you peeps been?
+    It\u2019s been a hot minute. \u2019\u2019\u2019\u2019\u2019"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 58157ebf03df441bcb2beb0bef116111, type: 2}
+  m_sharedMaterial: {fileID: -6378852810501808587, guid: 58157ebf03df441bcb2beb0bef116111, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0.43860435, y: 0, z: -180.95609, w: -1.038121}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1891534893
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891534889}
+  m_CullTransparentMesh: 1
 --- !u!1 &2011390640
 GameObject:
   m_ObjectHideFlags: 0
@@ -8306,6 +8465,163 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3214080302911113752, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
   m_PrefabInstance: {fileID: 2143486426}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2083692005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2083692006}
+  - component: {fileID: 2083692009}
+  - component: {fileID: 2083692008}
+  - component: {fileID: 2083692007}
+  m_Layer: 5
+  m_Name: txtMessagePrefab(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2083692006
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083692005}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1703658329}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 186, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2083692007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083692005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: 40
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
+--- !u!114 &2083692008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083692005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: '<color=#5C9B6E>num1Wa1fuLVR</color> said:  Lol. How have you peeps been?
+    It''s been a hot minute.'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 58157ebf03df441bcb2beb0bef116111, type: 2}
+  m_sharedMaterial: {fileID: -6378852810501808587, guid: 58157ebf03df441bcb2beb0bef116111, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0.43860435, y: 0, z: -180.95609, w: -1.038121}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2083692009
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083692005}
+  m_CullTransparentMesh: 1
 --- !u!1001 &2112112806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8648,6 +8964,58 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[1].messages.Array.data[1].text
+      value: ' Lol. How have you peeps been? It''s been a hot minute.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[2].messages.Array.data[1].text
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[3].messages.Array.data[0].text
+      value: Erm. Anyways. I hope you're still not beating yourself over what happened.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[3].messages.Array.data[4].text
+      value: i drew you a little somethin'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[3].messages.Array.data[5].text
+      value: Sugoi...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[3].messages.Array.data[7].text
+      value: 'Still, if Jace aligns with the shameful ways of your so-called "furry"
+        community, Kris, I will refrain from any serious judgment. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[4].messages.Array.data[2].text
+      value: "I am sickened by the daylight and the vile actions of preppy day-walkers
+        (the new term I have coined for the humans I live amongst). The Hot Topic
+        itself played perfectly acceptable music. However, my ears were cursed by
+        the blood-curdling sound of Justice Beaver's \u201CBabygirl\u201D the moment
+        I set foot outside. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[4].messages.Array.data[6].text
+      value: Did I hear Hot Topic?! Aren't they doing a collab with Hitsume Miko
+        right now?!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[4].messages.Array.data[7].text
+      value: Hitsume Miko... So kawaii desu...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[5].messages.Array.data[3].text
+      value: ' i like listening while i draw so ive basically cleared the entire
+        discography at this point '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[5].messages.Array.data[4].text
+      value: ' Counting Weekends? Really? I didn''t expect you to subject your ears
+        to that mainstream garbage.  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].messages.Array.data[0].text
       value: Hmph. *disappears into the omnipresent veil of darkness*
       objectReference: {fileID: 0}
@@ -8716,7 +9084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[1].text
-      value: "Has Jason become a prep? Disgusting\u2026"
+      value: Has Jason become a prep? Disgusting...
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[2].text
@@ -8724,7 +9092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[3].text
-      value: "My vampire intuition senses something off here\u2026hm."
+      value: My vampire intuition senses something off here...hm.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[4].text
@@ -8737,7 +9105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[6].text
-      value: "\u2026And not in a good way."
+      value: ...And not in a good way.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[7].text
@@ -8761,7 +9129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[1].text
-      value: "Well, i just havent been feeling like\u2026 myself lately?"
+      value: Well, i just havent been feeling like... myself lately?
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[2].text
@@ -8773,7 +9141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[4].text
-      value: "Like, i just don't even know who i really am\u2026"
+      value: Like, i just don't even know who i really am...
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[5].text
@@ -8781,7 +9149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[6].text
-      value: "I was correct. Jason is undergoing a transformation of sorts\u2026"
+      value: I was correct. Jason is undergoing a transformation of sorts...
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[10].messages.Array.data[7].text
@@ -8809,8 +9177,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[2].text
-      value: "I got a message from myself just now and it says that i'm a program?
-        and that apparently i haven't been doing a good job\u2026"
+      value: I got a message from myself just now and it says that i'm a program?
+        and that apparently i haven't been doing a good job...
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[3].text
@@ -8859,7 +9227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[12].messages.Array.data[4].text
-      value: "So what now\u2026"
+      value: So what now...
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[12].messages.Array.data[5].text
@@ -8899,6 +9267,30 @@ PrefabInstance:
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[13].messages.Array.data[3].text
       value: Yeah, let's do that.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[3].messages.Array.data[10].text
+      value: ' DO NOT disrespect the spirits of darkness. You have no idea what I''m
+        capable of.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[3].messages.Array.data[11].text
+      value: ' Behold...my TRUE POWER. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[3].messages.Array.data[12].text
+      value: I got nothing... so how about I treat you to a body pillow of your choice
+        from otakuexpress.com? Just give me the word.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[4].messages.Array.data[13].text
+      value: 'I wouldn''t want neckbearded degenerates like you infiltrating Hot
+        Topic''s sanctity. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[4].messages.Array.data[15].text
+      value: 'Kuso... Curse your flavorful language... *activates Sharingan. My eyes
+        glow red* But you fell into my trap card! ARGUMENT NO JUTSU!!! '
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].messages.Array.data[10].text
@@ -8942,7 +9334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[11].text
-      value: "Gomenasorry\u2026"
+      value: Gomenasorry...
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[11].messages.Array.data[12].text
@@ -8981,8 +9373,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[12].messages.Array.data[12].text
-      value: "I agree. Wow, so Jason-kun made a program to talk to us in his place...
-        So cold... But so... Sugoi\u2026"
+      value: I agree. Wow, so Jason-kun made a program to talk to us in his place...
+        So cold... But so... Sugoi...
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[12].messages.Array.data[13].text
@@ -9000,7 +9392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[12].messages.Array.data[16].text
-      value: "Yeah, I want to know why the real Jason-kun left us\u2026"
+      value: Yeah, I want to know why the real Jason-kun left us...
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[12].messages.Array.data[17].text
@@ -9367,6 +9759,30 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[2].branches.Array.data[0].choiceMsgs
+      value: 'Hes still... in the hospital '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[4].branches.Array.data[0].choiceMsgs
+      value: Heh...I see the chaos has begun.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[4].branches.Array.data[1].choiceMsgs
+      value: You're right Ebony. Kai cannot fathom the darkness inside of us.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[5].branches.Array.data[2].choiceMsgs
+      value: Hitsume Miko... doki-doki...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[6].branches.Array.data[0].choiceMsgs
+      value: What can i say, i have my opinions...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[6].branches.Array.data[1].choiceMsgs
+      value: Have fun being wrong...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].branches.Array.data[0].choiceMsgs
       value: I had a doctors appointment.
       objectReference: {fileID: 0}
@@ -9384,11 +9800,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[1].choiceMsgs
-      value: "Didn\u2019t feel like it\u2026"
+      value: "Didn\u2019t feel like it..."
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[2].choiceMsgs
-      value: "You guys wouldn\u2019t get it."
+      value: You guys wouldn't get it.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[9].branches.Array.data[0].choiceMsgs
@@ -9511,6 +9927,36 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[4].branches.Array.data[0].flavorDialogues.Array.data[0].text
+      value: Heh...I see the chaos has begun.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[4].branches.Array.data[1].flavorDialogues.Array.data[0].text
+      value: You're right Ebony. Kai cannot fathom the darkness inside of us.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[4].branches.Array.data[1].flavorDialogues.Array.data[2].text
+      value: 'Tch. Jason-kun, you baka... I thought you were my tomodachi. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[4].branches.Array.data[2].flavorDialogues.Array.data[2].text
+      value: "You sicken me, Jason. This is why I don't trust so called \u201Cemos.\u201D
+        You don't understand the true essence of our suffering.  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[5].branches.Array.data[2].flavorDialogues.Array.data[1].text
+      value: Jason-kun...? But I thought you hate anime?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[5].branches.Array.data[2].flavorDialogues.Array.data[2].text
+      value: "Jason...this isn\u2019t you...I trusted you. But you\u2019re just like
+        all the others."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
+      propertyPath: sequences.Array.data[6].branches.Array.data[1].flavorDialogues.Array.data[0].text
+      value: Have fun being wrong...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[7].branches.Array.data[0].flavorDialogues.Array.data[0].text
       value: I had a doctors appointment.
       objectReference: {fileID: 0}
@@ -9580,15 +10026,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[0].flavorDialogues.Array.data[2].text
-      value: "You had a doctor\u2019s appointment at 11 PM? How peculiar."
+      value: You had a doctor's appointment at 11 PM? How peculiar.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[0].text
-      value: "I didn\u2019t feel like it\u2026"
+      value: "Didn\u2019t feel like it..."
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[1].flavorDialogues.Array.data[1].text
-      value: "\u201CDidn\u2019t feel like it?\u201D Jason, I have spent MONTHS preparing
+      value: "\u201CDidn't feel like it?\u201D Jason, I have spent MONTHS preparing
         for the solstice. I had to buy EIGHTY DOLLARS worth of fake blood at Hot
         Topic. "
       objectReference: {fileID: 0}
@@ -9606,8 +10052,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[2].flavorDialogues.Array.data[0].text
-      value: "I fought a battle against my inner demons, and the agony was too unbearable.
-        You guys wouldn\u2019t get it."
+      value: I fought a battle against my inner demons, and the agony was too unbearable.
+        You guys wouldn't get it.
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: sequences.Array.data[8].branches.Array.data[2].flavorDialogues.Array.data[1].text
@@ -10090,7 +10536,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
       propertyPath: m_text
-      value: ''''''''''''' it''s been a minute'
+      value: "''''''\u2019\u2019\u2019\u2019\u2019 it's been a minute"
       objectReference: {fileID: 0}
     - target: {fileID: 3214080302911113753, guid: 8471069d43a484ce9a2825a722c9e564, type: 3}
       propertyPath: m_fontSize

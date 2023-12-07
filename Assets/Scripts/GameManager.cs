@@ -217,9 +217,9 @@ public class GameManager : MonoBehaviour
                 //create the writing inside the pop up
                 newestGameObj = Instantiate(chatMessageObj, currentPopUpButton.GetComponent<InboxButton>().attachedPopUp.GetComponent<PopUp>().contentBox.transform);
                 newestGameObj.GetComponent<TextMeshProUGUI>().text = "TO: json\n" +
-                    "FROM: Unknown Sender\nHello. I hope this message reaches you. I don’t have much time." +
+                    "FROM: Unknown Sender\nHello. I hope this message reaches you. I don't have much time." +
                     " You are Jason Lastname. You are an 18 year old in Acorn Falls. You are interested in " +
-                    "the band ‘Nuclear Love Story’ and shopping at Hot Topic. There was an incident in Acorn " +
+                    "the band 'Nuclear Love Story' and shopping at Hot Topic. There was an incident in Acorn " +
                     "Falls High School between you and your friend, Jeff.";
                 int maxChar = 20;
                 newestGameObj.GetComponent<TextMeshProUGUI>().rectTransform.sizeDelta =

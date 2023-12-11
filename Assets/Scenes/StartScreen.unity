@@ -167,17 +167,17 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.16402277, g: 0.112887144, b: 0.1981132, a: 1}
-  m_Intensity: 5
+  m_Intensity: 4.29
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
+    m_Bias: 0.169
     m_NormalBias: 0.4
     m_NearPlane: 0.2
     m_CullingMatrixOverride:
@@ -544,13 +544,13 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6977908, g: 0.54732996, b: 0.9150943, a: 1}
-  m_Intensity: 6.51
+  m_Intensity: 5.79
   m_Range: 56.11
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1

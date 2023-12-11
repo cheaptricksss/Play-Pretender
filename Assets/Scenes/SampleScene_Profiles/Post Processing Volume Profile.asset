@@ -27,13 +27,13 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.204
+    value: 0.379
   smoothness:
     overrideState: 1
     value: 0.22
   roundness:
     overrideState: 1
-    value: 0.822
+    value: 0.255
   rounded:
     overrideState: 1
     value: 0
@@ -99,10 +99,10 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.03
+    value: 0.234
   size:
     overrideState: 1
-    value: 0.7
+    value: 0.59
   lumContrib:
     overrideState: 1
     value: 0.8
@@ -128,7 +128,7 @@ MonoBehaviour:
     defaultState: 1
   intensity:
     overrideState: 1
-    value: 0.2
+    value: 0.144
   fastMode:
     overrideState: 1
     value: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
     value: 0
   contrast:
     overrideState: 1
-    value: 3
+    value: -1.9
   mixerRedOutRedIn:
     overrideState: 1
     value: 111

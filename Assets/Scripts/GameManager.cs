@@ -90,7 +90,7 @@ public class GameManager : MonoBehaviour
         inboxTxt.text = "Inbox";
         StartCoroutine(waitAndPrint(sequences[sequenceIndex].messages[dialogueIndex]));
         charBuffer = 50;
-        timeProduct = 25;
+        timeProduct = 50;
 
         // start playing music (dont loop)
         //start playing ambiant sound (loop)

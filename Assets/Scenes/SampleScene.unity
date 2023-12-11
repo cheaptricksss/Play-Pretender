@@ -5976,7 +5976,7 @@ MonoBehaviour:
   m_Content: {fileID: 1703658329}
   m_Horizontal: 0
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 2
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
@@ -8897,7 +8897,7 @@ PrefabInstance:
       objectReference: {fileID: 2011390640}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: timeProduct
-      value: 17
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1270432733764466697, guid: b7f098fd619b7431792da72013e22066, type: 3}
       propertyPath: choiceBoxContent
